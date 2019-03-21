@@ -3,13 +3,25 @@ title: "Introduction"
 teaching: 0
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "What is climate Data?"
+- "Where to get climate data?"
 objectives:
-- "First learning objective. (FIXME)"
+- "Learn terminology about Climate data"
+- "Get an overview of the various Climate data offering"
+- "Learn to understand Climate data, climate projections"
+- "Learn to understand Climate Data Formats"
+- "The Earth System Grid Federation (ESGF)"
+- "The Copernicus Climate Data Store (CDS)"
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "Climate data"
+- "netCDF"
+- "GRIB"
+- "CMIP"
+- "Copernicus"
+- "ESGF"
+- "CDS"
 ---
-FIXME
+
 
 {% include links.md %}
 
