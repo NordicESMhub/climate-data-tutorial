@@ -10,14 +10,15 @@ title: Setup
 - [The Bash Shell](#shell)
 - [Git](#git)
 - [Text editor](#editor)
+- [Anaconda Package Manager](#anaconda) 
 
-#### Python Users
-- [Install Python](#python)(for Python users only)
-- [Install additional python packages](#python-packages) (for Python users only)
+#### Python users only
+- [Python installation](#python) 
+- [Installation of additional python packages](#python-packages) 
 
 #### R Users
-- [Install R](#r) (for R users only)
-- [Install addition R libraries](#r-libraries) (for R users only)
+- [R installation](#r) 
+- [Installation of additional R libraries](#r-libraries) 
 
 
 <h2 id="setup">Setup</h2>
@@ -265,16 +266,19 @@ title: Setup
   </div>
 </div> {% comment %} End of 'editor' section. {% endcomment %}
 
-<div id="python"> {% comment %} Start of 'Python' section. Remove the third paragraph if
+<div id="anaconda"> {% comment %} Start of 'Python' section. Remove the third paragraph if
   the workshop will teach Python using something other than
   the Jupyter notebook.
   Details at https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility {% endcomment %}
-  <h3>Python</h3>
+  <h3>Anaconda Package Manager</h3>
 
+  
   <p>
-    <a href="https://python.org">Python</a> is a popular language for
+    Installing <a href="https://www.anaconda.com/distribution/">Anaconda</a> will allow  
+    give you to easily install <a href="https://python.org">Python</a> and <a href="https://www.r-project.org/">R</a>.
+	Both Python and R are popular languages for
     research computing, and great for general-purpose programming as
-    well.  Installing all of its research packages individually can be
+    well.  Installing additional research packages individually can be
     a bit difficult, so we recommend
     <a href="https://www.anaconda.com/distribution/">Anaconda</a>,
     an all-in-one installer.
@@ -284,16 +288,6 @@ title: Setup
     Regardless of how you choose to install it,
     <strong>please make sure you install Python version 3.x</strong>
     (e.g., 3.6 is fine).
-  </p>
-
-  <p>
-    We will teach Python using the <a href="https://jupyter.org/">Jupyter notebook</a>,
-    a programming environment that runs in a web browser. For this to work you will need a reasonably
-    up-to-date browser. The current versions of the Chrome, Safari and
-    Firefox browsers are all
-    <a href="https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility">supported</a>
-    (some older browsers, including Internet Explorer version 9
-    and below, are not).
   </p>
 
   <div>
@@ -363,6 +357,24 @@ title: Setup
   {% endcomment %}
 </div> {% comment %} End of 'Python' section. {% endcomment %}
 
+<div id="python"> 
+<h3>Python</h3>
+<p>
+If you have followed the previous section and installed <a href="#anaconda">Anaconda</a> then
+you are ready to go with Python.
+</p>
+<p>
+    We will teach Python using the <a href="https://jupyter.org/">Jupyter notebook</a>,
+    a programming environment that runs in a web browser. For this to work you will need a reasonably
+    up-to-date browser. The current versions of the Chrome, Safari and
+    Firefox browsers are all
+    <a href="https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility">supported</a>
+    (some older browsers, including Internet Explorer version 9
+    and below, are not).
+  </p>
+
+</div>
+  
 <div id="python-packages"> 
 
 <h3>Install additional Python packages</h3>
@@ -381,14 +393,14 @@ and then follow the instructions below.
       <article role="tabpanel" class="tab-pane active" id="python-packages-windows">
         <ol>
           <li>Open Anaconda navigator.</li>
-          <li>Download [environment.yml]((https://raw.githubusercontent.com/NordicESMhub/climate-data-tutorial/gh-pages/environment.yml))</li>
+          <li>Download <a href="https://raw.githubusercontent.com/NordicESMhub/climate-data-tutorial/gh-pages/environment.yml">environment.yml</a></li>
           <li>Import environment.yml from Anaconda Navigator.</li>
         </ol>
       </article>
       <article role="tabpanel" class="tab-pane active" id="python-packages-macos">
         <ol>
           <li>Open a terminal</li>
-          <li>Download [environment.yml]((https://raw.githubusercontent.com/NordicESMhub/climate-data-tutorial/gh-pages/environment.yml))</li>
+          <li>Download <a href="https://raw.githubusercontent.com/NordicESMhub/climate-data-tutorial/gh-pages/environment.yml">environment.yml</a></li>
           <li>Install environment.yml: <pre>conda env create -f environment.yml</pre></li>
           <li>Close the terminal window.</li>
 		</ol>
@@ -396,7 +408,7 @@ and then follow the instructions below.
       <article role="tabpanel" class="tab-pane active" id="python-packages-linux">
         <ol>
           <li>Open a terminal</li>
-          <li>Download [environment.yml]((https://raw.githubusercontent.com/NordicESMhub/climate-data-tutorial/gh-pages/environment.yml))</li>
+          <li>Download <a href="https://raw.githubusercontent.com/NordicESMhub/climate-data-tutorial/gh-pages/environment.yml">environment.yml</a></li>
           <li>Install environment.yml: <pre>conda env create -f environment.yml</pre></li>
           <li>Close the terminal window</li>
         </ol>
@@ -416,51 +428,11 @@ and then follow the instructions below.
     statistical analysis. To interact with R, we use
     <a href="https://www.rstudio.com/">RStudio</a>.
   </p>
+  <p>To install R and rstudio, use <a href="#anaconda">Anaconda navigator</a> and
+  follow <a href="https://docs.anaconda.com/anaconda/navigator/tutorials/create-r-environment/">these instructions</a>
+  to create a conda <b>R</b> environment.
+  </p>
 
-  <div>
-    <ul class="nav nav-tabs nav-justified" role="tablist">
-      <li role="presentation" class="active"><a data-os="windows" href="#rstats-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
-      <li role="presentation"><a data-os="macos" href="#rstats-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
-      <li role="presentation"><a data-os="linux" href="#rstats-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
-    </ul>
-
-    <div class="tab-content">
-      <article role="tabpanel" class="tab-pane active" id="rstats-windows">
-        <a href="https://www.youtube.com/watch?v=q0PjTAylwoU">Video Tutorial</a>
-        <p>
-          Install R by downloading and running
-          <a href="https://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
-          from <a href="https://cran.r-project.org/index.html">CRAN</a>.
-          Also, please install the
-          <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
-          Note that if you have separate user and admin accounts, you should run the 
-          installers as administrator (right-click on .exe file and select "Run as 
-          administrator" instead of double-clicking). Otherwise problems may occur later, 
-          for example when installing R packages.
-        </p>
-      </article>
-      <article role="tabpanel" class="tab-pane active" id="rstats-macos">
-        <a href="https://www.youtube.com/watch?v=5-ly3kyxwEg">Video Tutorial</a>
-        <p>
-          Install R by downloading and running
-          <a href="https://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
-          from <a href="https://cran.r-project.org/index.html">CRAN</a>.
-          Also, please install the
-          <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
-        </p>
-      </article>
-      <article role="tabpanel" class="tab-pane active" id="rstats-linux">
-        <p>
-          You can download the binary files for your distribution
-          from <a href="https://cran.r-project.org/index.html">CRAN</a>. Or
-          you can use your package manager (e.g. for Debian/Ubuntu
-          run <code>sudo apt-get install r-base</code> and for Fedora run
-          <code>sudo dnf install R</code>).  Also, please install the
-          <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
-        </p>
-      </article>
-    </div>
-  </div>
 </div> {% comment %} End of 'R' section. {% endcomment %}
 
 <div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
