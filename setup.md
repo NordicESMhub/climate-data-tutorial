@@ -8,6 +8,12 @@ We will be using the Copernicus Climate Data Store and its Python and R API so i
 
 - Create an [account](https://cds.climate.copernicus.eu/user/login?destination=%2F%23!%2Fhome)
 
+### Copernicus online learning environment (Optional)
+
+We will be using additional training material from the Copernicus online learning environment
+and if you would like to consult the materials yourself, 
+register [here](https://uls.climate.copernicus.eu/login).
+
 ### Install packages
 
 #### Basic setup for both Python and R users
