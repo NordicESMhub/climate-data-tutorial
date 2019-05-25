@@ -2,6 +2,11 @@
 title: Setup
 ---
 
+### Register to Copernicus Climate Data Store
+
+We will be using the Copernicus Climate Data Store and its Python and R API so it is important to register before the workshop.
+
+- Create an [account](https://cds.climate.copernicus.eu/user/login?destination=%2F%23!%2Fhome)
 
 ### Install packages
 
@@ -379,8 +384,7 @@ you are ready to go with Python.
 
 <h3>Install additional Python packages</h3>
 
-To install additional Python packages/libraries, you need to open a Terminal, 
-and then follow the instructions below.
+To install additional Python packages/libraries, you need to follow the instructions below.
 
   <div>
     <ul class="nav nav-tabs nav-justified" role="tablist">
@@ -392,15 +396,17 @@ and then follow the instructions below.
     <div class="tab-content">
       <article role="tabpanel" class="tab-pane active" id="python-packages-windows">
         <ol>
-          <li>Open Anaconda navigator.</li>
-          <li>Download <a href="https://raw.githubusercontent.com/NordicESMhub/climate-data-tutorial/gh-pages/environment.yml">environment.yml</a></li>
-          <li>Import environment.yml from Anaconda Navigator.</li>
+		  <li>Download <a href="/environment.yml" download="environment.yml">environment.yml</a></li>
+          <li><a href="https://docs.anaconda.com/anaconda/navigator/getting-started/">Open Anaconda navigator</a>.</li>
+           <li>Click the Environments tab in the left menu. Then click Import and select the environment.yml file you downloaded. 
+		  <img src="/fig/navigator-import-environment.png" alt="Import environment">
+		  </li>
         </ol>
       </article>
       <article role="tabpanel" class="tab-pane active" id="python-packages-macos">
         <ol>
           <li>Open a terminal</li>
-          <li>Download <a href="https://raw.githubusercontent.com/NordicESMhub/climate-data-tutorial/gh-pages/environment.yml">environment.yml</a></li>
+          <li>Download <a href="/environment.yml" download="environment.yml">environment.yml</a></li>
           <li>Install environment.yml: <pre>conda env create -f environment.yml</pre></li>
           <li>Close the terminal window.</li>
 		</ol>
@@ -408,14 +414,14 @@ and then follow the instructions below.
       <article role="tabpanel" class="tab-pane active" id="python-packages-linux">
         <ol>
           <li>Open a terminal</li>
-          <li>Download <a href="https://raw.githubusercontent.com/NordicESMhub/climate-data-tutorial/gh-pages/environment.yml">environment.yml</a></li>
+          <li>Download <a href="/environment.yml">environment.yml</a></li>
           <li>Install environment.yml: <pre>conda env create -f environment.yml</pre></li>
           <li>Close the terminal window</li>
         </ol>
       </article>
     </div>
   </div>
-  
+For more information, refer to <a href="http://docs.anaconda.com/anaconda/navigator/tutorials/manage-environments/">Managing environments</a> in the Anaconda documentation.
 </div>
 
 
@@ -435,8 +441,34 @@ and then follow the instructions below.
 
 </div> {% comment %} End of 'R' section. {% endcomment %}
 
-<div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
+<div id="r-libraries"> {% comment %} Start of 'R' section. {% endcomment %}
   <h3>Install additional R libraries</h3>
+
+The following <pre>R</pre> packages are used in the lessons.
+
+<ul>
+<li><a href="https://cran.r-project.org/package=dplyr">dplyr</a></li>
+<li><a href="https://cran.r-project.org/package=ggplot2">ggplot2</a></li>
+<li><a href="https://cran.r-project.org/package=raster">raster</a></li>
+<li><a href="https://cran.r-project.org/package=rgdal">rgdal</a></li>
+<li><a href="https://cran.r-project.org/package=rasterVis">rasterVis</a></li>
+<li><a href="https://cran.r-project.org/package=remotes">remotes</a></li>
+<li><a href="https://cran.r-project.org/package=sf">sf</a></li>
+<li><a href="https://cran.r-project.org/package=ncdf4">ncdf4</a></li>
+<li><a href="https://cran.r-project.org/package=tmap">tmap</a></li>
+<li><a href="https://cran.r-project.org/package=mapview">mapview</a></li>
+<li><a href="https://cran.r-project.org/package=maps">maps</a></li>
+<li><a href="https://cran.r-project.org/package=plotly">plotly</a></li>
+<li><a href="https://cran.r-project.org/package=leaflet">leaflet</a></li>
+<li><a href="https://cran.r-project.org/web/packages/ecmwfr/">ecmwfr</a></li>
+</ul>
+
+  Start RStudio with Anaconda Navigator and the newly created R environment. Then install the following packages:
+
+  <pre>
+  install.packages(c("installr","dplyr", "ggplot2", "raster", "rgdal", "rasterVis", "sf", "ncdf4", "tmap", "mapview", "maps", "plotly", "leaflet", "ecmwfr"))
+  </pre>
+
 </div>
 
 {% include links.md %}
