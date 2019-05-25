@@ -412,7 +412,7 @@ To install additional Python packages/libraries, you need to follow the instruct
       <article role="tabpanel" class="tab-pane active" id="python-packages-macos">
         <ol>
           <li>Open a terminal</li>
-          <li>Download <a href="/environment.yml" download="environment.yml">environment.yml</a></li>
+          <li>Download <a href="environment.yml" download="environment.yml">environment.yml</a></li>
           <li>Install environment.yml: <pre>conda env create -f environment.yml</pre></li>
           <li>Close the terminal window.</li>
 		</ol>
@@ -420,7 +420,7 @@ To install additional Python packages/libraries, you need to follow the instruct
       <article role="tabpanel" class="tab-pane active" id="python-packages-linux">
         <ol>
           <li>Open a terminal</li>
-          <li>Download <a href="/environment.yml">environment.yml</a></li>
+          <li>Download <a href="environment.yml">environment.yml</a></li>
           <li>Install environment.yml: <pre>conda env create -f environment.yml</pre></li>
           <li>Close the terminal window</li>
         </ol>
