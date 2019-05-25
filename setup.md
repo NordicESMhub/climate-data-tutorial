@@ -402,10 +402,10 @@ To install additional Python packages/libraries, you need to follow the instruct
     <div class="tab-content">
       <article role="tabpanel" class="tab-pane active" id="python-packages-windows">
         <ol>
-		  <li>Download <a href="/environment.yml" download="environment.yml">environment.yml</a></li>
+		  <li>Download <a href="environment.yml" download="environment.yml">environment.yml</a></li>
           <li><a href="https://docs.anaconda.com/anaconda/navigator/getting-started/">Open Anaconda navigator</a>.</li>
            <li>Click the Environments tab in the left menu. Then click Import and select the environment.yml file you downloaded. 
-		  <img src="/fig/navigator-import-environment.png" alt="Import environment">
+		  <img src="fig/navigator-import-environment.png" alt="Import environment">
 		  </li>
         </ol>
       </article>
