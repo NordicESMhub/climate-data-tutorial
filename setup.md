@@ -442,7 +442,7 @@ For more information, refer to <a href="http://docs.anaconda.com/anaconda/naviga
   </p>
   <p>To install R and rstudio, use <a href="#anaconda">Anaconda navigator</a> and
   follow <a href="https://docs.anaconda.com/anaconda/navigator/tutorials/create-r-environment/">these instructions</a>
-  to create a conda <b>R</b> environment.
+  to create a conda <b>R</b> environment called <b>esm-r-analysis</b>.
   </p>
 
 </div> {% comment %} End of 'R' section. {% endcomment %}
