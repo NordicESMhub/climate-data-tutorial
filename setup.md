@@ -16,18 +16,18 @@ register [here](https://uls.climate.copernicus.eu/login).
 
 ### Install packages
 
-#### Basic setup for both Python and R users
+#### Basic setup
 
 - [The Bash Shell](#shell)
 - [Git](#git)
 - [Text editor](#editor)
 - [Anaconda Package Manager](#anaconda) 
 
-#### Python users only
+#### Python
 - [Python installation](#python) 
 - [Installation of additional python packages](#python-packages) 
 
-#### R Users
+#### R 
 - [R installation](#r) 
 - [Installation of additional R libraries](#r-libraries) 
 
