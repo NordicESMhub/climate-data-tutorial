@@ -22,6 +22,24 @@ keypoints:
 - "CDS"
 ---
 
+# What is climate?
 
+Go to [www.menti.com](https://www.menti.com/) and use the code **38 02 34**.
+
+# Climate terminology
+
+# Climate versus Weather?
+
+See [Video](https://youtu.be/e0vj-0imOLw)
+
+# What do we mean by climate data?
+
+## Essential Climate Variables
+
+## Exercices
+
+# Where can we get Climate data?
+
+## 
 {% include links.md %}
 
