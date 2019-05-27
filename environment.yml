@@ -36,5 +36,6 @@ dependencies:
   - folium
   - basemap-data-hires
   - rasterstats
+  - eccodes
   - pip:
       - geojsoncontour
