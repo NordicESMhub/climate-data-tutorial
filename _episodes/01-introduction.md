@@ -30,7 +30,16 @@ Go to [www.menti.com](https://www.menti.com/) and use the code given by your ins
 
 # Climate versus Weather?
 
-See [Video](https://youtu.be/e0vj-0imOLw)
+> # What is the difference between weather and climate?
+>
+> This exercise is meant to be done in small groups (2-3 persons).
+> Take 5 minutes to discuss about the difference between weather
+> and climate. 
+> Summarize your discussions in the workshop etherpad.
+>
+> {: .challenge}
+
+See [Video](https://youtu.be/e0vj-0imOLw) as a summary/solution of the preceding exercise.
 
 # What do we mean by climate data?
 
