@@ -24,7 +24,7 @@ keypoints:
 
 # What is climate?
 
-Go to [www.menti.com](https://www.menti.com/) and use the code **38 02 34**.
+Go to [www.menti.com](https://www.menti.com/) and use the code given by your instructor.
 
 # Climate terminology
 
