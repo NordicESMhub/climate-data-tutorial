@@ -46,7 +46,7 @@ There are many types of numerical climate models which differ by their complexit
 * Regional Climate Models (RCM), which focus on a limited area of the world (generally with a fine resolution);
 * Variable Resolution Models (VR-Models), which use a coarse grid for the global domain and a variable horizontal mesh refinement over a region of interest:
 
-<img src="../fig/cordex.png">
+<img src="../fig/EUCordex30x4.png">
 
 ## Observations (or observational data)
 These are measurements (from ground stations, buoys, satellites, etc.) of the occurrence of one or more physical variables (temperature, humidity, wind, etc.) at one or more particular times and places in and on the atmosphere, ocean, etc. 
