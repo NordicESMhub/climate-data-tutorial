@@ -41,12 +41,12 @@ Climate models are a mathematical representation of the climate developed by sci
 Various types of models are used to analyse different aspects of the climate. If the natural system is altered by assuming socio-economic trends, greenhouse gas emissions, or other activities by man, the climate models project future climates. These projections are scenarios of how man’s activities may affect the natural climate.
 
 ## Different types of models
-
+There are many types of numerical climate models which differ by their complexity and coupling between various components (from more or less simplified atmosphere only models, to coupled atmosphere-ocean models and fully coupled models including other components like the land, cryosphere, etc.). Such models broadly fall into these categories:
 * Global/General Climate/Circulation Models (GCM) and Earth System Models (ESM), which simulate the climate of the entire planete (generally with a coarse spatial resolution);
-
 * Regional Climate Models (RCM), which focus on a limited area of the world (generally with a fine resolution);
+* Variable Resolution Models (VR-Models), which use a coarse grid for the global domain and a variable horizontal mesh refinement over a region of interest:
 
-* Variable Resolution Models (VR-Models), which use a coarse grid for the global domain and a variable horizontal mesh refinement over a region of interest.
+<img src="../fig/cordex.png">
 
 ## Observations (or observational data)
 These are measurements (from ground stations, buoys, satellites, etc.) of the occurrence of one or more physical variables (temperature, humidity, wind, etc.) at one or more particular times and places in and on the atmosphere, ocean, etc. 
