@@ -41,13 +41,13 @@ Climate models are a mathematical representation of the climate developed by sci
 Various types of models are used to analyse different aspects of the climate. If the natural system is altered by assuming socio-economic trends, greenhouse gas emissions, or other activities by man, the climate models project future climates. These projections are scenarios of how man’s activities may affect the natural climate.
 
 ## Observations (or observational data)
-These are measurements (from ground stations, probes, satellites, etc.) of the occurrence of one or more physical variables (temperature, humidity, wind, etc.) at one or more particular times and places in and on the atmosphere, ocean, etc. 
+These are measurements (from ground stations, buoys, satellites, etc.) of the occurrence of one or more physical variables (temperature, humidity, wind, etc.) at one or more particular times and places in and on the atmosphere, ocean, etc. 
 
 Observations can be direct or indirect:
 * direct when they are made directly, for example temperature or pressure at a land station
 
 <img src="../fig/WMO Global Observing System.png">
-(from https://uls.climate.copernicus.eu)
+(from https://uls.climate.copernicus.eu) The sensors themselves can be either in-situ (hence providing information about their immediate environment) or remote (in which case they are able to measure over distances that extend significantly beyond the location of the instrument itself).
 
 * indirect when they are derived from other observations, for example information related to past climate (these are sometimes referred to as "climate proxies") can be inferred from tree rings, lake sediments (varves) or ice cores.
 
