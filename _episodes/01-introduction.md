@@ -62,7 +62,7 @@ Observations can be direct or indirect:
 <img src="../fig/WMO Global Observing System.png">
 (from https://uls.climate.copernicus.eu) The sensors themselves can be either in-situ (hence providing information about their immediate environment) or remote (in which case they are able to measure over distances that extend significantly beyond the location of the instrument itself).
 
-* indirect when they are derived from other observations, for example information related to past climate (these are sometimes referred to as "climate proxies") can be inferred from tree rings, lake sediments (varves) or ice cores.
+* indirect when they are derived from other observations, for example information related to past climate (these are sometimes referred to as "climate proxies") can be inferred from tree rings (dendrochronology), lake sediments (varves) or ice cores.
 
 <img src="../fig/frost_rings_375.jpg">
 (from https://www.earth.columbia.edu) Example taken from a Siberian pine tree in Mongolia where the distorted rings are evidence of a drastic cooling in the northern hemisphere (due to a massive volcanic eruption) that froze sap in the cells during the growing season in years 536-537 C.E. 
