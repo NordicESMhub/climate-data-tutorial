@@ -43,11 +43,12 @@ Various types of models are used to analyse different aspects of the climate. If
 ## Observations (or observational data)
 These are measurements (from ground stations, probes, satellites, etc.) of the occurrence of one or more physical variables (temperature, humidity, wind, etc.) at one or more particular times and places in and on the atmosphere, ocean, etc. 
 
+Observations can be direct or indirect:
+* direct when they are made directly, for example temperature or pressure at a land station
+
 <img src="../fig/WMO Global Observing System.png">
 (from https://uls.climate.copernicus.eu)
 
-Observations can be direct or indirect:
-* direct when they are made directly, for example temperature or pressure at a land station;
 * indirect when they are derived from other observations, for example information related to past climate (these are sometimes referred to as "climate proxies") can be inferred from tree rings, lake sediments (varves) or ice cores.
 
 <img src="../fig/frost_rings_375.jpg">
