@@ -57,7 +57,7 @@ The models broadly fall into these categories:
 These are measurements (from ground stations, buoys, satellites, etc.) of the occurrence of one or more physical variables (temperature, humidity, wind, etc.) at one or more particular times and places in and on the atmosphere, ocean, etc. 
 
 Observations can be direct or indirect:
-* direct when they are made directly, for example temperature or pressure at a land station
+* direct when a physical parameter is measured directly, for example temperature or pressure at a land station: 
 
 <img src="../fig/WMO Global Observing System.png">
 (from https://uls.climate.copernicus.eu) The sensors themselves can be either in-situ (hence providing information about their immediate environment) or remote (in which case they are able to measure over distances that extend significantly beyond the location of the instrument itself).
