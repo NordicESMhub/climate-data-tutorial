@@ -51,7 +51,7 @@ Observations can be direct or indirect:
 * indirect when they are derived from other observations, for example information related to past climate (these are sometimes referred to as "climate proxies") can be inferred from tree rings, lake sediments (varves) or ice cores.
 
 <img src="../fig/frost_rings_375.jpg">
-(from https://www.earth.columbia.edu) Example taken from a Siberian pine tree in Mongolia where the distorted rings are evidence of a drastic cooling in the northern hemisphere due to a massive volcanic eruption that froze sap in the cells during the growing season (dated around 536 C.E.). 
+(from https://www.earth.columbia.edu) Example taken from a Siberian pine tree in Mongolia where the distorted rings are evidence of a drastic cooling in the northern hemisphere (due to a massive volcanic eruption) that froze sap in the cells during the growing season in years 536-537 C.E. 
 
 ## Reanalyses
 A new reanalysis product (called ERA5) has recently been released by ECMWF as part of Copernicus Climate Change Services. This product has higher spatial resolution (31 km) and covers the period from 1979 to present (and this will soon be extended to 1950).
