@@ -37,7 +37,28 @@ According to [wikipedia](https://en.wikipedia.org/wiki/Climate),
 Climate is defined as the average state of everyday's weather condition over a period of 30 years. It is measured by assessing the patterns of variation in temperature, humidity, atmospheric pressure, wind, precipitation, atmospheric particle count and other meteorological variables in a given region over long periods of time.
 Climate differs from weather, in that weather only describes the short-term conditions of these variables in a given region. 
 
-# Climate terminology
+> # What do you think about wikipedia definition of climate?
+>
+> Take a few minutes to discuss with your fellow about the definition of climate
+> given by wikipedia.
+>
+{: .challenge}
+
+# Terminology
+
+# Climate versus Weather
+
+> # What is the difference between weather and climate?
+>
+> This exercise is meant to be done in small groups (2-3 persons).
+> Take 5 minutes to discuss about the difference between weather
+> and climate. 
+> Summarize your discussions in the workshop etherpad.
+>
+> {: .challenge}
+
+See [Video](https://youtu.be/e0vj-0imOLw) as a summary/solution of the preceding exercise.
+
 
 ## Climate prediction vs. projection
 
@@ -94,19 +115,6 @@ In addition to re-analysing all the old data using a consistent system, the rean
 > Some people erroneously call reanalysis products “gridded observational data” as if by some magic trick observations not
 > made in the first place could be reinvented! Remember that there are values at each grid point and time only because a numerical
 > weather prediction model was used and that this model only used the available measurements.
-
-# Climate versus Weather?
-
-> # What is the difference between weather and climate?
->
-> This exercise is meant to be done in small groups (2-3 persons).
-> Take 5 minutes to discuss about the difference between weather
-> and climate. 
-> Summarize your discussions in the workshop etherpad.
->
-> {: .challenge}
-
-See [Video](https://youtu.be/e0vj-0imOLw) as a summary/solution of the preceding exercise.
 
 # What do we mean by climate data?
 
