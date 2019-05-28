@@ -53,6 +53,12 @@ The models broadly fall into these categories:
 
 <img src="../fig/EUCordex30x4.png">
 
+## Representative Concentration Pathways (RCPs)
+The “Representative Concentration Pathways” were defined by the Intergovernmental Panel on Climate Change (IPCC) for its 5th Assessment Report (AR5) in 2014 to provide plausible descriptions of the future, based on socio-economic scenarios of how global society grows and develops. These four RCPs (RCP2.6, RCP4.5, RCP6 and RCP8.5) are labelled after a possible range of radiative forcing values in the year 2100 corresponding to 2.6, 4.5, 6.0 and 8.5 W/m2, respectively.
+
+<img src="../fig/RCPs_Fig.jpg">
+(from https://sedac.ciesin.columbia.edu) 
+
 ## Observations (or observational data)
 These are measurements (from ground stations, buoys, satellites, etc.) of the occurrence of one or more physical variables (temperature, humidity, wind, etc.) at one or more particular times and places in and on the atmosphere, ocean, etc. 
 
