@@ -46,6 +46,10 @@ These are measurements (from ground stations, probes, satellites, etc.) of the o
 <img src="../fig/WMO Global Observing System.png">
 (from https://uls.climate.copernicus.eu)
 
+Observations can be direct or indirect:
+* direct when they are made directly, for example temperature or pressure at a land station;
+* indirect when they are derived from other observations, for example information related to past climate (these are sometimes referred to as "climate proxies") can be inferred from tree rings, lake sediments (varves) or ice cores.
+
 ## Reanalyses
 A new reanalysis product (called ERA5) has recently been released by ECMWF as part of Copernicus Climate Change Services. This product has higher spatial resolution (31 km) and covers the period from 1979 to present (and this will soon be extended to 1950).
 In addition to re-analysing all the old data using a consistent system, the reanalyses also make use of much archived data that was not available to the original analyses. This is because in a weather centre only data arrived before the model runs start can be used, also not all the huge volume of satellite data can be processed and used, for obvious operational constraints, however they could have been of great value to improve the forecasting. This allows for corrections to be made at a later stage as well as filling gaps in areas where data was sparse. 
