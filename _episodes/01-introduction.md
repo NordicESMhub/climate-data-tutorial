@@ -272,7 +272,7 @@ The “Representative Concentration Pathways” were defined by the [Intergovern
 
 Each RCP corresponds to certain socio-economic assumptions:
 
-- **RCP2.6** - Low emissions: . Here radiative forcing reaches 3.1 W/m2 before it returns to 2.6 W/m2 by 2100. In order to reach such forcing levels, ambitious greenhouse gas emissions reductions would be required over time.
+- **RCP2.6** - Low emissions: here radiative forcing reaches 3.1 W/m2 before it returns to 2.6 W/m2 by 2100. In order to reach such forcing levels, ambitious greenhouse gas emissions reductions would be required over time.
 
 - **RCP4.5** - Intermediate emissions: here radiative forcing is stabilised shortly after year 2100, consistent with a future with relatively ambitious emissions reductions.
 
