@@ -200,7 +200,7 @@ Focusing on a smaller geographical region makes it possible to decrease the grid
 ### Different types of models
 
 Various types of models are used to analyse different aspects of the climate. 
-All have different ways to represent the real world, depending on how researchers prioritize and perform these simplifications in the numerical climate model.
+All have different ways to represent the real world, depending on how researchers prioritize and perform these simplifications (in terms of parameterizations, etc.) in the numerical climate model.
 They will all give different results but the collective results provide a better overview of the real world than any single model.
 
 
