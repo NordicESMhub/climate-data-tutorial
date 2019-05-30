@@ -293,7 +293,7 @@ RCPs ensure that starting conditions, historical data and projections are employ
 > <img src="https://media.springernature.com/original/springer-static/image/art%3A10.1007%2Fs00382-018-4413-y/MediaObjects/382_2018_4413_Fig1_HTML.gif"/>
 >*Source: [The cloud-free global energy balance and inferred cloud radiative effects: an assessment based on direct observations and climate models](https://link.springer.com/article/10.1007%2Fs00382-018-4413-y)*
 >
-> When climate forcings result in incoming power being greater than outgoing power, the planet warms. If outgoing energy is greater, the planet cools.
+> When climate forcings result in incoming energy being greater than outgoing energy, the planet warms up. If outgoing energy is greater, the planet cools down.
 >
 {: .callout}
 
