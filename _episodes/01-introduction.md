@@ -23,6 +23,7 @@ keypoints:
 - "Shared Socioeconomic Pathways"
 ---
 
+
 Many section of the lesson has been taken from the online [Copernicus Training material](https://uls.climate.copernicus.eu/).
 
 [Copernicus](https://www.copernicus.eu/en), previously known as GMES (Global Monitoring for Environment and Security), is the European Programme for the establishment of a European capacity for Earth Observation. 
