@@ -6,17 +6,15 @@ questions:
 - "Where to get Climate data?"
 - "What is Copernicus CDS?"
 - "How to retrieve Copernicus Climate data?"
-- "What is GRIB format?"
+- "What are netCDF and GRIB formats?"
 - "What is CDS Toolbox?"
-- "What is CDS API?"
-- "What is the best workflow to analyze and visualize Copernicus Climate Data?"
 objectives:
 - "Get an overview of various aspects of CDS Toolbox"
-- "Learn how to go beyond the CDS Toolbox"
-- "Get an overview of CDS API"
 keypoints:
 - "CDS Essential Information"
-- "netCDF versus GRIB"
+- "Retrieve data from the CDS web interace"
+- "Visualize Climate data with the CDS Toolbox"
+- "netCDF and GRIB data formats"
 ---
 
 # Where to get Climate data?
