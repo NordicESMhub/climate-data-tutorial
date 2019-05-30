@@ -220,7 +220,7 @@ The models broadly fall into these categories:
 
 
 > ## Teaching tool for Earth System Modeling
-> As a part of the [EVA](https://www.nersc.no/project/eva) project, where scientists developed the Norwegian Earth System Model, [NorESM](https://nordicesmhub.github.io/projects/noresm/), a teaching tool was developed to show how climate modelers view the system around them.
+> As a part of the [EVA](https://www.nersc.no/project/eva) project, where scientists developed the Norwegian Earth System Model ([NorESM](https://nordicesmhub.github.io/projects/noresm/)), a teaching tool was developed to show how climate modelers view the system around them.
 >
 > [Explore the Earth](https://expearth.uib.no/) to understand Climate systems!
 > 
