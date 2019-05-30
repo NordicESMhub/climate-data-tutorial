@@ -300,7 +300,7 @@ RCPs ensure that starting conditions, historical data and projections are employ
 ### Gases and pollutants included in the RCPs
 
 - **Greenhouse gases**: CO2, methane, nitrous oxide, several groups of fluorocarbons and sulphur hexafluoride.
-- **Aerosols and chemically active gasses**: Sulphur dioxide, soot, organic carbon, carbon monoxide, nitrogen oxides, volatile organic compounds, ammonia
+- **Aerosols and chemically active gasses**: Sulphur dioxide, soot, organic carbon, carbon monoxide, nitrogen oxides, volatile organic compounds, ammonia.
 
 > ## RCP Database version 2.0.5
 >
