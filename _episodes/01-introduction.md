@@ -326,4 +326,3 @@ Over the past few years, an international team of climate scientists, economists
 Information about the scenario process and the SSP framework can be found in [Moss et al. (2010)](http://www.nature.com/nature/journal/v463/n7282/full/nature08823.html), [van Vuuren et al. (2014)](http://link.springer.com/article/10.1007%2Fs10584-013-0906-1) and [O‘Neil et al. (2014)](http://link.springer.com/article/10.1007%2Fs10584-013-0905-2) and [Kriegler et al. (2014)](http://link.springer.com/article/10.1007%2Fs10584-013-0971-5). 
 
 {% include links.md %}
-
