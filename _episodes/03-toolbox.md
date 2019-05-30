@@ -1,5 +1,5 @@
 ---
-title: "Download Climate data"
+title: "Climate Data Store Toolbox"
 teaching: 0
 exercises: 0
 questions:
