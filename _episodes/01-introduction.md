@@ -147,7 +147,7 @@ There are also other types of observations that we do not mention in this lesson
 # Models
 
 Climate models are a mathematical representation of the climate developed by scientists to understand and predict the climate system. 
-n order to be able to do this, the models divide the earth, ocean and atmosphere into a grid. The values of the predicted variables, such as surface pressure, wind, temperature, humidity and rainfall are calculated at each grid point over time, to predict their future values.
+In order to be able to do this, the models divide the earth, ocean and atmosphere into a grid. The values of the predicted variables, such as surface pressure, wind, temperature, humidity and rainfall are calculated at each grid point over time, to predict their future values.
 
 <img src="https://www.climate.gov/sites/default/files/AtmosphericModelSchematic.png" width="70%"/>
 *Source: [https://www.climate.gov/maps-data/primer/climate-models](https://www.climate.gov/maps-data/primer/climate-models)*
