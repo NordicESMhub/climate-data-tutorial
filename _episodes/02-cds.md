@@ -11,9 +11,9 @@ questions:
 - "What is CDS API?"
 - "What is the best workflow to analyze and visualize Copernicus Climate Data?"
 objectives:
-- "Get an overview of CDS API"
 - "Get an overview of various aspects of CDS Toolbox"
 - "Learn how to go beyond the CDS Toolbox"
+- "Get an overview of CDS API"
 keypoints:
 - "CDS Essential Information"
 - "netCDF versus GRIB"
@@ -151,6 +151,12 @@ frequency.
 ### How to use ensemble simulations?
 
 Downloading ensemble simulations is useful to get an indication of the variability of a particular parameter and for statistical analysis.
+
+## What is 2m temperature?
+
+We selected [ERA5 monthly averaged data on single levels from 1979 to present](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=form) so we expected to get surface variables only.
+
+In fact, we get all the variables on a single level and usually close to the surface. Here *2m temperature* is computed as the temperature at a reference height (2 metres).
 
 ## Data format: GRIB versus NetCDF
 
