@@ -3,73 +3,79 @@ title: "Climate Data Store Toolbox"
 teaching: 0
 exercises: 0
 questions:
-- "How to download ERA5 and/or CMIP5?"
-- "What Essential Variables can I download from ERA5 and/or CMIP5?"
-- "How to use CDS API and CDS Toolbox?"
-- "What is the best workflow to analyze and visualize CMIP data?"
+- "What is the Copernicus Climate Data Store Toolbox?"
+- "How to retrieve dataset with the Toolbox?"
+- "How to quickly visualize a dataset with the Toolbox?"
+- "What is the best workflow to analyze and visualize climate data?"
 objectives:
-- "Get an overview of various aspects of CMIP5"
-- "Learn about Earth System Grid Federation (ESGF)"
-- "Learn how to manipulate netCDF data"
-- "Learn how to work with CMIP data"
-- "Learn how to work with ERA5 data"
+- "Get an overview of various aspects of the CDS Toolbox"
+- "Learn how to manipulate netCDF data within the CDS Toolbox"
 keypoints:
-- "CMIP5 Essential Information"
+- "CDS Toolbox"
+- "Data retrieval from the Toolbox"
+- "Data visualization from the Toolbox"
 ---
 
-Let's look at the default selected boxes:
-- **Product type**: Monthly averaged ensemble members
-- **Variable**: 2m temperature
-- **Year**: 2019
-- **Month**: June
-- **Time**: 00:00
-- **Format**: NetCDF 
-
-Please note that the year, month and time may be different (depends on the current date when the request is done!).
-
-And apart from the date, all the other default values introduce notions we do not understand yet!
-
-### What is an ensemble?
-
-Ensemble modelling is a method used to give an indication of the range of possible future states of the Earth (here the atmosphere). 
-Instead of making one single simulation, a set (or ensemble) of simulation is produced. 
-
-Multiple simulations are run, each with a slight variation of its initial conditions and with slightly perturbed models. These variations represent the inevitable uncertainty in the initial conditions and approximations in the models. They produce a range of possible values.
-
-### What is a member?
-
-A member from an ensemble simulation is one single simulation among the set of perturbed runs. To ease identification, we give a number to each of the perturbed runs.
-
-So for instance the member 0 is usually associated to what we call the control run e.g. the simulation has not been perturbed.
+Let's make the same selection as before. Go to "[your requests](https://cds.climate.copernicus.eu/cdsapp#!/yourrequests?tab=form)" tab and select the last product you downloaded.
 
 
-When selecting "Monthly averaged ensemble members" of ERA 5 data as *Product type* and one variable and date only, you will get 10 different fields covering the entire globe. 
+<img src="../fig/ERA5_request.png" width="90%" />
 
-ERA5 provides an estimate of uncertainty through the use
-of a 10-member ensemble of data assimilations (EDA) at a
-coarser resolution (63 km horizontal resolution) and 3-hourly
-frequency.
+Click on "Open request form" and you will be re-directed to the selection page with all your previous choices already pre-selected.
+
+This time, instead of clicking on "Submit Form", we click on "Show Toolbox request":
 
 
-### How to use ensemble simulations?
+<img src="../fig/ERA5_show_toolbox.png" width="90%" />
 
-Downloading ensemble simulations is useful to get an indication of the variability of a particular parameter and for statistical analysis.
+Copy the content in your clipboard so we can paste it later in the CDS Toolbox.
+
+The CDS Toolbox package is still under active development and the current documentation can be found [here](https://devpi.copernicus-climate.eu//root/master/cdstoolbox/0.9.8.8/+d/index.html).
+
+~~~
+import cdstoolbox as ct
+
+data = ct.catalogue.retrieve(
+     'reanalysis-era5-single-levels-monthly-means',
+     {
+         'product_type':'monthly_averaged_reanalysis',
+         'variable':'total_precipitation',
+         'year':'2003',
+         'month':'06',
+         'time':'00:00',
+         'format':'netcdf'
+     })
+~~~
+{: .python}
+
+- Then click on "Toolbox" tab to start the CDS toolbox:
+
+<img src="../fig/ERA5_start_toolbox.png" width="90%" />
+
+- Create a new *workspace* and name it **ERA5_precipitation** (make sure you press the *enter* button to validate your choice otherwise the new workspace will not be created.
+- Finally paste your previous selection in the toolbox console:
+
+<img src="../fig/ERA5_console_toolbox.png" width="90%" />
+
+> ## Is it python syntax?
+> If you are a python programmer, you probably have recognized the syntax. Otherwise, it may be a bit difficult to understand!
+> The goal here is not to learn how to use the Python CDS toolbox package as it is currently not open source.
+> For now, we make our selection via the web interface and then copy paste the request.
+>
+{: .callout}
+
+Before running it, we need to add a bit more code:
+
+~~~
+
+~~~
+{: .language-python}
 
 ## What is 2m temperature?
 
 We selected [ERA5 monthly averaged data on single levels from 1979 to present](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=form) so we expected to get surface variables only.
 
 In fact, we get all the variables on a single level and usually close to the surface. Here *2m temperature* is computed as the temperature at a reference height (2 metres).
-
-## Data format: GRIB versus NetCDF
-
-### GRIB
-
-[GRIB](https://en.wikipedia.org/wiki/GRIB) (GRIdded Binary or General Regularly-distributed Information in Binary form)
-
-### NetCDF
-
-[NetCDF](https://en.wikipedia.org/wiki/NetCDF)
 
 {% include links.md %}
 

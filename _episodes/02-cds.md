@@ -7,13 +7,11 @@ questions:
 - "What is Copernicus CDS?"
 - "How to retrieve Copernicus Climate data?"
 - "What are netCDF and GRIB formats?"
-- "What is CDS Toolbox?"
 objectives:
-- "Get an overview of various aspects of CDS Toolbox"
+- "Get an overview of various aspects of the Copernicus Climate Data Store"
 keypoints:
 - "CDS Essential Information"
-- "Retrieve data from the CDS web interace"
-- "Visualize Climate data with the CDS Toolbox"
+- "Retrieve data from the CDS web interface"
 - "netCDF and GRIB data formats"
 ---
 
@@ -88,7 +86,7 @@ When you search, you can make sure you only get datasets (and not documentation,
 
 <img src="../fig/CDS_tab_datasets.png" width="80%"/>
 
-As you can see, it is important to know what you are looking for before starting to download datasets. We will see in the next section that the size of the datasets can also be an important criteria to take into account before starting downloading Climate data.
+As you can see, it is important to know what you are looking for before starting to download datasets. And the best approach is usually to narrow it down as much as possible to avoid having to download unecessary data. We will see in the next section that the size of the datasets can also be an important criteria to take into account before starting downloading Climate data. 
 
 ## Downloads data from the Climate Data Store
 
@@ -116,17 +114,79 @@ We will select [ERA5 monthly averaged data on single levels from 1979 to present
 > agree with the corresponding data license. This agreement can only be done online.
 {: .callout}
 
-Let's look at the default selected boxes:
-- **Product type**: Monthly averaged reanalysis by hour of day
-- **Variable**: Total precipitation
+Click on the tab "Download data" so we can select some ERA5 data to download:
+
+<img src="../fig/ERA5_select.png" />
+
+Let's select:
+- **Product type**: Monthly averaged reanalysis
+- **Popular**: Total precipitation
 - **Year**: 2003
 - **Month**: June
-- **Time**: 06:00
+- **Time**: 00:00
 - **Format**: NetCDF 
+
+Make sure you agree to **Terms of use** and then click on **Submit form**:
+
+<img src="../fig/ERA5_submit.png" />
+
+You will then be re-directed to the list of your requests from where you can download your dataset once the retrieval is done:
+
+<img src="../fig/ERA5_downloaded.png" width="80%"/>
+
+<br>
+
+If your retrieval is successful then click on the "download" button to download. 
+When there is any issue when retrieving data, you request will be "marked" as **failed**.
 
 Please note that it is always good practice to select a small sample of data (in the present instance we take only one month) to check that it meets your needs!
 
-Another issue here may be that apart from the variable and date, all the other boxes ticked involve notions that we do not understand yet..
+Another issue here may be that apart from the variable and date, all the other boxes ticked involve notions that we do not understand yet!
+
+## What are the different single level ERA5 product types?
+
+
+We have two families of products:
+
+- *Monthly averaged reanalysis*
+- *Monthly averaged ensemble members*
+
+And then similar product types but *by hour of day*:
+
+- *Monthly averaged reanalysis by hour of day*
+- *Monthly averaged ensemble members by hour of day*
+
+The difference between the two "families" of products is that you get one dataset per day for the first one (averaged over all the times and the entire month) while for the second one you get one dataset per hour (every 3 hours), each averaged over the entire month.
+
+You would choose to get one dataset per day if you do not need to take into account the time (for instance day/night, morning/evening, etc.) and the second one otherwise.
+
+And now what is the difference between *monthly averaged reanalysis* and *monthly averaged ensemble members*?
+
+> ## What is an ensemble?
+>
+> Ensemble modelling is a method used to give an indication of the range of possible future states of the Earth (here the atmosphere). 
+> Instead of making one single simulation, a set (or ensemble) of simulation is produced. 
+>
+> Multiple simulations are run, each with a slight variation of its initial conditions and with slightly perturbed models. These variations represent the inevitable uncertainty in the initial conditions and approximations in the models. They produce a range of possible values.
+> 
+{: .callout}
+
+
+> ## What is a member?
+>
+> A member from an ensemble simulation is one single simulation among the set of perturbed runs. To ease identification, we give a number to each of the perturbed runs.
+> 
+> So for instance the member 0 is usually associated to what we call the control run e.g. the simulation has not been perturbed.
+>
+{: .callout}
+
+When selecting "Monthly averaged ensemble members" of ERA 5 data as *Product type* and one variable and date only, you will get 10 different datasets (or fields) and not one only. 
+ 
+ERA5 provides an estimate of uncertainty through the use of a 10-member ensemble of data assimilations (EDA) at a coarser resolution (63 km horizontal resolution) and 3-hourly frequency.
+
+### How to use ensemble simulations?
+
+Downloading ensemble simulations is useful to get an indication of the variability of a particular parameter and for statistical analysis.
 
 ## What is total precipitation?
 
@@ -140,23 +200,40 @@ You can also check it in the [Climate Essential Variables](https://gcos.wmo.int/
 
 *Precipitation, either liquid or solid, is the most important climate variable directly affecting humans. Through either its duration, intensity and frequency or its lack of occurrence, it influences the supply of water, causes risks to life and livelihoods when associated with floods, landslides and droughts, and affects infrastructure planning, leisure activities and more. Precipitation is closely related to cloud properties, a number of terrestrial ECVs and to ocean-surface salinity. It is indicative of the release of latent heat within the energy cycle, as well as being at the heart of the hydrological cycle.*
 
+## Why choosing NetCDF format?
+
+Depending on the type of data you will select, you may have the choice between several data formats:
+
+- [GRIB](https://en.wikipedia.org/wiki/GRIB)
+- [NetCDF](https://en.wikipedia.org/wiki/NetCDF)
+
 > ## Data format: GRIB versus NetCDF
 >
-> ### GRIB
->
-> [GRIB](https://en.wikipedia.org/wiki/GRIB) (GRIdded Binary or General Regularly-distributed Information in Binary form) 
->
+> 
 > ### NetCDF
 >
-> [NetCDF](https://en.wikipedia.org/wiki/NetCDF)
+> [NetCDF](https://en.wikipedia.org/wiki/NetCDF)  ([Network Common Data Form](https://www.unidata.ucar.edu/software/netcdf/)) is a set of software libraries and self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data. NetCDF is commonly used to store and distribute scientific data. 
+> The NetCDF software was developed at the [Unidata Program Center](http://www.unidata.ucar.edu/publications/factsheets/current/factsheet_netcdf.pdf) in Boulder, Colorado, USA. 
+> NetCDF files usually have the extension *.nc*. 
+> As for the GRIB format, NetCDF files are binary and you need to use specific tools to read them. NetCDF files can also be manipulated with most programming languages (R, Python, C, Fortran, etc.).
 > 
+> For climate and forecast data stored in NetCDF format there are (non-mandatory) conventions on metadata ([CF Convention](http://cfconventions.org/)). 
+> 
+> ### GRIB
+>
+> [GRIB](https://en.wikipedia.org/wiki/GRIB) (GRIdded Binary or General Regularly-distributed Information in Binary form) is a file format designed for storing and distributing weather data. GRIB files are mostly used in meteorological applications. The last ECMWF re-analysis (ERA5) is natively encoded in GRIB and also in a version converted from GRIB to NetCDF. Note that due to limitations of the NetCDF specifications, the NetCDF version contains fewer parameters (variables) and incomplete metadata (information about the data). 
+> As this format is not widely used there are not as many tools or programming languages supported as netCDF.
+>
 {: .callout}
 
-## The Climate Data Store toolbox
 
-In this section, we will briefly introduce the Climate Data Store toolbox.
+Whenever we can, we will choose to download data in NetCDF format but we will also add links to documentation with examples using native GRIB format.
 
-### "Show Toolbox request" 
+## What can we do with the downloaded NetCDF data file?
+
+We just learned that NetCDF format is a binary format and to be able to read or visualize it, we would need to use dedicated software or libraries that can handle this "special" format.
+
+Before learning how to read the file we have downloaded, we will learn how to use the [Climate Data Store toolbox](https://cds.climate.copernicus.eu/toolbox-editor/1979).
 
 {% include links.md %}
 
