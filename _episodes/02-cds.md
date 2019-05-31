@@ -233,7 +233,7 @@ Whenever we can, we will choose to download data in NetCDF format but we will al
 
 We just learned that NetCDF format is a binary format and to be able to read or visualize it, we would need to use dedicated software or libraries that can handle this "special" format.
 
-Before learning how to read the file we have downloaded, we will learn how to use the [Climate Data Store toolbox](https://cds.climate.copernicus.eu/toolbox-editor/1979).
+That is what we will do in the two next episodes, using Python and R.
 
 {% include links.md %}
 
