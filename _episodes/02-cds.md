@@ -116,6 +116,18 @@ We will select [ERA5 monthly averaged data on single levels from 1979 to present
 > agree with the corresponding data license. This agreement can only be done online.
 {: .callout}
 
+Let's look at the default selected boxes:
+- **Product type**: Monthly averaged ensemble members
+- **Variable**: 2m temperature
+- **Year**: 2019
+- **Month**: June
+- **Time**: 00:00
+- **Format**: NetCDF 
+
+Please note that the year, month and time may be different (depends on the current date when the request is done!).
+
+And apart from the date, all the other default values introduce notions we do not understand yet!
+
 ## What is 2m temperature?
 
 We selected [ERA5 monthly averaged data on single levels from 1979 to present](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=form) so we expected to get surface variables only.
