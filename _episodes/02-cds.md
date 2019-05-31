@@ -128,21 +128,29 @@ Please note that it is always good practice to select a small sample of data (in
 
 Another issue here may be that apart from the variable and date, all the other boxes ticked involve notions that we do not understand yet..
 
-## What is 2m total precipitation?
+## What is total precipitation?
 
-We selected [ERA5 monthly averaged data on single levels from 1979 to present](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=form) so we expected to get surface variables only.
+When we select total precipitation from [ERA5 monthly averaged data on single levels from 1979 to present](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=form), how can we have a description of the variable?
 
-In fact, we get all the variables on a single level and usually close to the surface (for example the *2m temperature* is computed as the temperature at a reference height at 2 metres).
+Each variable is described in the [Overview](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview).
 
-## Data format: GRIB versus NetCDF
+- **Total precipitation**: *m* (metre)
 
-### GRIB
+You can also check it in the [Climate Essential Variables](https://gcos.wmo.int/en/essential-climate-variables/ecv-factsheets) where it can be found under [Precipitation](https://ane4bf-datap1.s3.eu-west-1.amazonaws.com/wmod8_gcos/s3fs-public/precipitation_ecv_factsheet_201905.pdf?Y3ybZeunAm83xo9wjBWZg5_Sa50uaXga):
 
-[GRIB](https://en.wikipedia.org/wiki/GRIB) (GRIdded Binary or General Regularly-distributed Information in Binary form)
+*Precipitation, either liquid or solid, is the most important climate variable directly affecting humans. Through either its duration, intensity and frequency or its lack of occurrence, it influences the supply of water, causes risks to life and livelihoods when associated with floods, landslides and droughts, and affects infrastructure planning, leisure activities and more. Precipitation is closely related to cloud properties, a number of terrestrial ECVs and to ocean-surface salinity. It is indicative of the release of latent heat within the energy cycle, as well as being at the heart of the hydrological cycle.*
 
-### NetCDF
-
-[NetCDF](https://en.wikipedia.org/wiki/NetCDF)
+> ## Data format: GRIB versus NetCDF
+>
+> ### GRIB
+>
+> [GRIB](https://en.wikipedia.org/wiki/GRIB) (GRIdded Binary or General Regularly-distributed Information in Binary form) 
+>
+> ### NetCDF
+>
+> [NetCDF](https://en.wikipedia.org/wiki/NetCDF)
+> 
+{: .callout}
 
 ## The Climate Data Store toolbox
 
