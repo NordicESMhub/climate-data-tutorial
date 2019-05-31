@@ -62,14 +62,17 @@ If you click on "Product Type", you will get the list of available climate data 
 > You probably recognize the first 3 product types from the previous
 > lesson, so let us do a small exercise.
 >
-> Alice is a Master's student and need climate data for the period 1998-2003.
-> Which product types can she use?
-> What criteria could she use to make her final choice?
+> Alice is a Master's student working on precipitation and she need climate data for the period 1998-2003.
+>
+> Which product(s) types can she use?
+>
+> Which criteria could she use to make her final choice?
 > > ## Solution
 > > Alice could use:
 > > - Climate projections
 > > - Reanalysis
 > > - Satellite observations
+>
 > and her final choice depends on the variable, the spatial and temporal resolution.
 > {: .solution}
 >
