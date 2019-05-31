@@ -19,7 +19,7 @@ keypoints:
 
 # Where to get Climate data?
 
-There are many online services to get climate data and it is often difficult to know which resources to trust. In this lesson, we will be using the [Copernicus Climate Change Service (C3S)](https://climate.copernicus.eu/).
+There are many online services to get climate data, and it is often difficult to know which one are up-to date and which resources to trust. Also different services provide different Application Programming Interfaces (API), use different terminologies, different file formats etc.,  which make it difficult for new users to master them all. Therefore in this lesson, we will be focusing on the [Copernicus Climate Change Service (C3S)](https://climate.copernicus.eu/).
 
 
 # Copernicus Climate Change Service (C3S)
@@ -30,7 +30,7 @@ This is a service operated by the [European Centre for Medium-range Weather Fore
 
 # The Climate Data Store (CDS)
 
-This is a web portal providing a single point of access to a wide range of information about the past, present and future climate. This includes observations (i.e., in-situ measurements, remote sensing data, etc.), historical climate data records, estimates of Essential Climate Variables (ECVs) derived from Earth observations, global and regional climate reanalyses of past observations, seasonal forecasts and climate projections.
+This is a web portal providing a single point of access to a wide range of information. This includes observations (i.e., in-situ measurements, remote sensing data, etc.), historical climate data records, estimates of Essential Climate Variables (ECVs) derived from Earth observations, global and regional climate reanalyses of past observations, seasonal forecasts and climate projections.
 
 > ## Climate Data Store (CDS) Registration
 > To be able to use CDS services, you need to [register](https://cds.climate.copernicus.eu/user/login?destination=%2F%23!%2Fhome).
