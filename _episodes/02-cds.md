@@ -72,8 +72,8 @@ If you click on "Product Type", you will get the list of available climate data 
 > > - Climate projections
 > > - Reanalysis
 > > - Satellite observations
->
-> and her final choice depends on the variable, the spatial and temporal resolution.
+> >
+> > and her final choice depends on the variable, the spatial and temporal resolution.
 > {: .solution}
 >
 {: .challenge}
