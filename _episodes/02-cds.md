@@ -60,7 +60,8 @@ If you click on "Product Type", you will get the list of available climate data 
 
 > ## Which product type should I choose?
 > You probably recognize the first 3 product types from the previous
-> lesson.
+> lesson, so let us do a small exercise.
+>
 > Alice is a Master's student and need climate data for the period 1998-2003.
 > Which product types can she use?
 > What criteria could she use to make her final choice?
