@@ -11,10 +11,13 @@ keypoints:
 - "xarray"
 - "cartopy"
 - "scipy"
-- "PyTorch"
 - "ipyleaflet"
 ---
 
+
+# Visualize netCDF Climate data with Python
+
+# Retrieve Climate data with CDS API
 
 {% include links.md %}
 

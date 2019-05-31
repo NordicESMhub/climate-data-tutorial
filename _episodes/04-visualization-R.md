@@ -10,6 +10,9 @@ objectives:
 keypoints:
 ---
 
+# Visualize netCDF Climate data with R
+
+# Retrieve Climate data with CDS API
 
 {% include links.md %}
 
