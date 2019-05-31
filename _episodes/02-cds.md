@@ -62,7 +62,7 @@ If you click on "Product Type", you will get the list of available climate data 
 > You probably recognize the first 3 product types from the previous
 > lesson, so let us do a small exercise.
 >
-> Alice is a Master's student working on precipitation and she need climate data for the period 1998-2003.
+> Alice is a Master's student working on draught in Europe over the period 1998-2018, and she wants to look at precipitation data for summer months in 2003 to start with (because she heard about a period of excessively hot and dry weather occuring then).
 >
 > Which product(s) types can she use?
 >
@@ -117,22 +117,22 @@ We will select [ERA5 monthly averaged data on single levels from 1979 to present
 {: .callout}
 
 Let's look at the default selected boxes:
-- **Product type**: Monthly averaged ensemble members
-- **Variable**: 2m temperature
-- **Year**: 2019
+- **Product type**: Monthly averaged reanalysis by hour of day
+- **Variable**: Total precipitation
+- **Year**: 2003
 - **Month**: June
-- **Time**: 00:00
+- **Time**: 06:00
 - **Format**: NetCDF 
 
-Please note that the year, month and time may be different (depends on the current date when the request is done!).
+Please note that it is always good practice to select a small sample of data (in the present instance we take only one month) to check that it meets your needs!
 
-And apart from the date, all the other default values introduce notions we do not understand yet!
+Another issue here may be that apart from the variable and date, all the other boxes ticked involve notions that we do not understand yet..
 
-## What is 2m temperature?
+## What is 2m total precipitation?
 
 We selected [ERA5 monthly averaged data on single levels from 1979 to present](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=form) so we expected to get surface variables only.
 
-In fact, we get all the variables on a single level and usually close to the surface. Here *2m temperature* is computed as the temperature at a reference height (2 metres).
+In fact, we get all the variables on a single level and usually close to the surface (for example the *2m temperature* is computed as the temperature at a reference height at 2 metres).
 
 ## Data format: GRIB versus NetCDF
 
