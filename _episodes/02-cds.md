@@ -12,7 +12,7 @@ objectives:
 keypoints:
 - "CDS Essential Information"
 - "Retrieve data from the CDS web interface"
-- "netCDF and GRIB data formats"
+- "NnetCDF and GRIB data formats"
 ---
 
 # Where to get Climate data?
@@ -143,66 +143,30 @@ Please note that it is always good practice to select a small sample of data (in
 
 Another issue here may be that apart from the variable and date, all the other boxes ticked involve notions that we do not understand yet!
 
-## What are the different single level ERA5 product types?
+However, for now let's concentrate on the dataset we downloaded to make our first plot.
 
 
-We have two families of products:
-
-- *Monthly averaged reanalysis*
-- *Monthly averaged ensemble members*
-
-And then similar product types but *by hour of day*:
-
-- *Monthly averaged reanalysis by hour of day*
-- *Monthly averaged ensemble members by hour of day*
-
-The difference between the two "families" of products is that you get one dataset per day for the first one (averaged over all the times and the entire month) while for the second one you get one dataset per hour (every 3 hours), each averaged over the entire month.
-
-You would choose to get one dataset per day if you do not need to take into account the time (for instance day/night, morning/evening, etc.) and the second one otherwise.
-
-And now what is the difference between *monthly averaged reanalysis* and *monthly averaged ensemble members*?
-
-> ## What is an ensemble?
->
-> Ensemble modelling is a method used to give an indication of the range of possible future states of the Earth (here the atmosphere). 
-> Instead of making one single simulation, a set (or ensemble) of simulation is produced. 
->
-> Multiple simulations are run, each with a slight variation of its initial conditions and with slightly perturbed models. These variations represent the inevitable uncertainty in the initial conditions and approximations in the models. They produce a range of possible values.
+> ## What is total precipitation?
+> 
+> When we select total precipitation from [ERA5 monthly averaged data on single levels from 1979 to present](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=form), how can we have a description of the variable?
+> 
+> Each variable is described in the [Overview](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview).
+> 
+> - **Total precipitation**: *m* (metre)
+> 
+> You can also check it in the [Climate Essential Variables](https://gcos.wmo.int/en/essential-climate-variables/ecv-factsheets) where it can be found under [Precipitation](https://ane4bf-datap1.s3.eu-west-1.amazonaws.com/wmod8_gcos/s3fs-public/precipitation_ecv_factsheet_201905.pdf?Y3ybZeunAm83xo9wjBWZg5_Sa50uaXga):
+> 
+> *Precipitation, either liquid or solid, is the most important climate variable directly affecting humans. Through either its duration, intensity and frequency or its lack of occurrence, it influences the supply of water, causes risks to life and livelihoods when associated with floods, landslides and droughts, and affects infrastructure planning, leisure activities and more. Precipitation is closely related to cloud properties, a number of terrestrial ECVs and to ocean-surface salinity. It is indicative of the release of latent heat within the energy cycle, as well as being at the heart of the hydrological cycle.*
 > 
 {: .callout}
 
+## What data format for Climate data?
 
-> ## What is a member?
->
-> A member from an ensemble simulation is one single simulation among the set of perturbed runs. To ease identification, we give a number to each of the perturbed runs.
-> 
-> So for instance the member 0 is usually associated to what we call the control run e.g. the simulation has not been perturbed.
->
-{: .callout}
+Climate data can become large very quickly (as we usually need to analyze data over large period of time and covering large geographical areas) so we do not store them as text files (csv, tabular, etc.) to compress them as much as possible without loosing any important information.
 
-When selecting "Monthly averaged ensemble members" of ERA 5 data as *Product type* and one variable and date only, you will get 10 different datasets (or fields) and not one only. 
- 
-ERA5 provides an estimate of uncertainty through the use of a 10-member ensemble of data assimilations (EDA) at a coarser resolution (63 km horizontal resolution) and 3-hourly frequency.
+All Climate data are stored in **binary** format and are not *human readable*.
 
-### How to use ensemble simulations?
-
-Downloading ensemble simulations is useful to get an indication of the variability of a particular parameter and for statistical analysis.
-
-## What is total precipitation?
-
-When we select total precipitation from [ERA5 monthly averaged data on single levels from 1979 to present](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=form), how can we have a description of the variable?
-
-Each variable is described in the [Overview](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview).
-
-- **Total precipitation**: *m* (metre)
-
-You can also check it in the [Climate Essential Variables](https://gcos.wmo.int/en/essential-climate-variables/ecv-factsheets) where it can be found under [Precipitation](https://ane4bf-datap1.s3.eu-west-1.amazonaws.com/wmod8_gcos/s3fs-public/precipitation_ecv_factsheet_201905.pdf?Y3ybZeunAm83xo9wjBWZg5_Sa50uaXga):
-
-*Precipitation, either liquid or solid, is the most important climate variable directly affecting humans. Through either its duration, intensity and frequency or its lack of occurrence, it influences the supply of water, causes risks to life and livelihoods when associated with floods, landslides and droughts, and affects infrastructure planning, leisure activities and more. Precipitation is closely related to cloud properties, a number of terrestrial ECVs and to ocean-surface salinity. It is indicative of the release of latent heat within the energy cycle, as well as being at the heart of the hydrological cycle.*
-
-## Why choosing NetCDF format?
-
-Depending on the type of data you will select, you may have the choice between several data formats:
+Depending on the type of Climate data, you may have the choice between several data formats:
 
 - [GRIB](https://en.wikipedia.org/wiki/GRIB)
 - [NetCDF](https://en.wikipedia.org/wiki/NetCDF)
@@ -229,11 +193,12 @@ Depending on the type of data you will select, you may have the choice between s
 
 Whenever we can, we will choose to download data in NetCDF format but we will also add links to documentation with examples using native GRIB format.
 
-## What can we do with the downloaded NetCDF data file?
 
-We just learned that NetCDF format is a binary format and to be able to read or visualize it, we would need to use dedicated software or libraries that can handle this "special" format.
+NetCDF format is a binary format and to be able to read or visualize it, we would need to use dedicated software or libraries that can handle this "special" format.
 
-That is what we will do in the two next episodes, using Python and R.
+Then depending on whether you wish to visualize your data with [Python](/03-visualization-python) or [R](/04-visualization-R),
+follow the corresponding instructions.
+
 
 {% include links.md %}
 

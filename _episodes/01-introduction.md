@@ -56,6 +56,8 @@ Quantities that climate scientists are interested in are similar to those used t
 
 <img src="../fig/climate_vs_weather.png" width="50%"/>
 
+*Source: [Animated short on statistics](https://youtu.be/e0vj-0imOLw) from Norwegian infotainment program Siffer. Produced by TeddyTV for NRK. Animation by Ole Christoffer Haga*
+
 Watch this [Video](https://youtu.be/e0vj-0imOLw) to get a summary of the difference between climate and weather.
 
 Climate questions are different from weather questions:
