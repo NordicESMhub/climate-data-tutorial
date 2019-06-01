@@ -196,7 +196,7 @@ Whenever we can, we will choose to download data in NetCDF format but we will al
 
 NetCDF format is a binary format and to be able to read or visualize it, we would need to use dedicated software or libraries that can handle this "special" format.
 
-Then depending on whether you wish to visualize your data with [Python](/03-visualization-python) or [R](/04-visualization-R),
+Then depending on whether you wish to visualize your data with [Python](../03-visualization-python) or [R](../04-visualization-R),
 follow the corresponding instructions.
 
 
