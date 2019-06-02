@@ -352,25 +352,6 @@ ggplot() +
 >
 {: .callout}
 
-## Change projection
-
-It is very often convenient to visualize using a different projection than the original data:
-
-~~~
-# Reproject
-
-dset_r_ortho <- projectRaster(dset_r, crs='+proj=ortho +lat_0=40 +lon_0=20')
-
-df <- as.data.frame(dset_r_ortho, xy = TRUE) 
-
-ggplot() +
-  geom_raster(data = df , aes(x = x, y = y, fill = X2.metre.temperature)) +
-  scale_fill_viridis_c()  +
-  coord_quickmap()
-~~~
-{: .language-python}
-
-<img src="../fig/r-t2m-ortho.png" width="50%" />
 
 ## CMIP5 monthly data on single levels
 
