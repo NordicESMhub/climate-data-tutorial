@@ -446,8 +446,8 @@ for more information.
 > typical of present day conditions, but it cannot be considered as the actual weather at that date.
 > To be more realistic, climate data has to be considered over a much longer period of time. For instance,
 > we could easily compute (for both ERA5 and CMIP5) the average of the month of June between 1988 and 2018 (spanning 30 years) to
-> have a more reliable results. However, as you have noticed, the horizontal resolution of ERA5 is much
-> higher then the CMIP data and therefore there is much more variability/details in the re-analysis data (1/4 degrees) than with NorESM (about 2 degrees).
+> have a more reliable results. However, as you have noticed, the horizontal resolution of ERA5 (1/4 degrees)  is much
+> higher then the CMIP data (about 2 degrees) and therefore there is much more variability/details in the re-analysis data than with NorESM.
 >
 {: .callout}
 
