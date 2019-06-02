@@ -29,7 +29,10 @@ ls ~/Downloads/*.nc
 ~~~
 {: .language-bash}
 
-the `~` symbol (a.k.a. tilde) represents the home directory of a user;
+For those of you who are not familiar with bash language:
+
+the `~` symbol (a.k.a. *tilde*) is a shortcut for the home directory of a user;
+
 `*.nc` means that we are looking for any files with a suffix `.nc` (NetCDF file).
 
 ~~~
@@ -446,8 +449,8 @@ for more information.
 > typical of present day conditions, but it cannot be considered as the actual weather at that date.
 > To be more realistic, climate data has to be considered over a much longer period of time. For instance,
 > we could easily compute (for both ERA5 and CMIP5) the average of the month of June between 1988 and 2018 (spanning 30 years) to
-> have a more reliable results. However, as you have noticed, the horizontal resolution of ERA5 (1/4 degrees)  is much
-> higher then the CMIP data (about 2 degrees) and therefore there is much more variability/details in the re-analysis data than with NorESM.
+> have a more reliable results. However, as you (may) have noticed, the horizontal resolution of ERA5 (1/4 x 1/4 degrees) is much
+> higher than that of the CMIP data (about 2 x 2 degrees) and therefore there is much more variability/details in the re-analysis data than with NorESM.
 >
 {: .callout}
 
