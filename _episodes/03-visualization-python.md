@@ -9,6 +9,7 @@ objectives:
 keypoints:
 - "xarray"
 - "cartopy"
+- "CDS API for Python"
 ---
 
 
@@ -635,6 +636,8 @@ c.retrieve(
     },
     'download.nc')
 ~~~
+{: .language-python}
+
 
 ## Geographical subset
 

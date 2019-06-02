@@ -7,6 +7,9 @@ questions:
 objectives:
 - "Learn to combine Climate data with your own research topic"
 keypoints:
+- "raster R package"
+- "Quick visualization with R"
+- "CDS API for R"
 ---
 
 
@@ -741,6 +744,150 @@ ggplot() +
 
 # Retrieve Climate data with CDS API
 
+Using CDS web interface is very useful when you need to retrieve small amount of data and you do not need to customize 
+your request. However, it is often very useful to retrieve climate data directly on the computer where you
+need to run your postprocessing workflow.
+
+In that case, you can use the CDS API (Application Programming Interface) to retrieve Climate data directly in Python
+from the Climate Data Store.
+
+We will be using the R package `ecmwfr`.
+
+## Get your API key
+
+- Make sure you login to the [Climate Data Store](https://cds.climate.copernicus.eu/#!/home)
+
+- Click on your username (top right of the main page) to get your API key.
+
+<img src="../fig/CDS_API.png" width="80%" />
+
+- Copy the code displayed beside, in the file `$HOME/.cdsapirc`
+
+~~~
+url: https://cds.climate.copernicus.eu/api/v2
+key: UID:KEY
+~~~
+{: .language-bash}
+
+Where UID is your `uid` and  KEY your API key. See [documentation](https://cds.climate.copernicus.eu/api-how-to)
+to get your API and related information.
+
+## Use CDS API
+
+Once the CDS API client is installed, it can be used to request data from the datasets listed in the CDS 
+catalogue. It is necessary to agree to the Terms of Use of every datasets that you intend to download.
+
+Attached to each dataset download form, the button **Show API Request** displays the python code to
+ be used. The request can be formatted using the interactive form. 
+
+For instance to retrieve the same ERA5 dataset e.g. near surface air temperature for June 2003:
+
+<img src="../fig/CDSAPI_t2m_ERA5.png" width="80%" />
+
+As you can see, the request shown is based on Python so we need to **convert** it to R.
+
+Let's try it:
+
+~~~
+library(ecmwfr)
+
+# Specify the data set				
+request <- list(
+    "dataset" = 'reanalysis-era5-single-levels-monthly-means',
+    'product_type' = 'monthly_averaged_reanalysis',
+    'variable' = '2m_temperature',
+    'year' = '2003',
+    'month' = '06',
+    'time' = '00:00',
+    'format' = 'netcdf',
+    'target' = 'download.nc')
+	
+# Start downloading the data, the path of the file
+# will be returned as a variable (ncfile)
+# Set your UID properly and the path where to find .cdsapirc
+
+myUID <-  "...."
+ncfile <- wf_request(user = myUID,
+                     request = request,   
+                     transfer = TRUE,  
+                     path = "~",
+                     verbose = FALSE)
+~~~
+{: .language-r}
+				
+## Geographical subset
+
+~~~
+request <- list(
+    "dataset" = 'reanalysis-era5-single-levels-monthly-means',
+    'product_type' = 'monthly_averaged_reanalysis',
+    'variable' = '2m_temperature',
+    'year' = '2003',
+    'month' = '06',
+    'time' = '00:00',
+    'format' = 'netcdf',
+	'area' = "60/-10/50/2",
+    'target' = 'download_small_area.nc')
+	
+myUID <-  "...."
+ncfile <- wf_request(user = myUID,
+                     request = request,   
+                     transfer = TRUE,  
+                     path = "~",
+                     verbose = FALSE)
+~~~
+{: .language-r}
+
+## Change horizontal resolution 
+
+For instance to get a coarser resolution:
+
+~~~
+request <- list(
+    "dataset" = 'reanalysis-era5-single-levels-monthly-means',
+    'product_type' = 'monthly_averaged_reanalysis',
+    'variable' = '2m_temperature',
+    'year' = '2003',
+    'month' = '06',
+    'time' = '00:00',
+    'format' = 'netcdf',
+	'area' = "60/-10/50/2",
+	'grid' = '1/1',
+    'target' = 'download_small.nc')
+	
+myUID <-  "...."
+ncfile <- wf_request(user = myUID,
+                     request = request,   
+                     transfer = TRUE,  
+                     path = "~",
+                     verbose = FALSE)
+~~~
+{: .language-r}
+
+More information can be found [here](https://confluence.ecmwf.int/display/CKB/C3S+ERA5%3A+Web+API+to+CDS+API).
+       
+## To download CMIP 5 Climate data via CDS API
+
+~~~
+request <- list(
+    "dataset" = 'projections-cmip5-monthly-single-levels',
+    'variable' = '2m_temperature',
+        'model' = 'noresm1_m',
+        'experiment' = 'historical',
+        'ensemble_member' = 'r1i1p1',
+        'period' = '185001-200512',
+    'target' = 'download_CMIP5.nc')
+	
+myUID <-  "...."
+ncfile <- wf_request(user = myUID,
+                     request = request,   
+                     transfer = TRUE,  
+                     path = "~",
+                     verbose = FALSE)
+~~~
+{: .language-r}
+
+See more information [here](https://cran.r-project.org/web/packages/ecmwfr/vignettes/cds_vignette.html).
 
 {% include links.md %}
 
