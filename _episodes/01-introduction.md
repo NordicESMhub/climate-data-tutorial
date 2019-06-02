@@ -257,6 +257,24 @@ A **climate prediction** (or climate forecast) is an attempt to produce an estim
 **Climate projections** are distinct from climate predictions in that projections depend upon emission/concentration/radiative forcing **scenarios**, which are based on assumptions concerning, for example, future socio-economic and technological developments that may or may not be realized and are therefore subject to substantial uncertainty.
 
 
+> ## Norwegian Earth System Model ([NorESM](https://no.wikipedia.org/wiki/NorESM))
+>
+> The Norwegian Earth System Model (NorESM) is a global, coupled model system for the physical climate system, which can be run with 
+> various degrees of interactions with bio-geo-chemical processes in the earth system. NorESM is developed as a nationally coordinated 
+> effort funded by the [Reseach Council of Norway](https://www.forskningsradet.no/). 
+> NorESM is contributing with climate simulations to the [Coupled Model Intercomparison Project](https://www.wcrp-climate.org/wgcm-cmip) 
+> (both [CMIP5](https://cmip.llnl.gov/cmip5/) and [CMPI6](https://pcmdi.llnl.gov/CMIP6/)). 
+{: .callout}
+
+> ## [Coupled Model Intercomparison Project](https://www.wcrp-climate.org/wgcm-cmip)
+>
+> The objective of the Coupled Model Intercomparison Project (CMIP) is to better understand past, present and future climate changes arising from natural, unforced variability or in response to changes in radiative forcing in a multi-model context. 
+>
+>  <iframe src="https://www.youtube.com/embed/WdRiYPJLt4o" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+>
+{: .callout}
+
+
 ### Representative Concentration Pathways (RCPs)
 
 The [Intergovernmental Panel on Climate Change (IPCC)](https://www.ipcc.ch/) 
