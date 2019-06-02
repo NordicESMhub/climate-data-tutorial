@@ -88,19 +88,19 @@ When you search, you can make sure you only get datasets (and not documentation,
 
 As you can see, it is important to know what you are looking for before starting to download datasets. And the best approach is usually to narrow it down as much as possible to avoid having to download unecessary data. We will see in the next section that the size of the datasets can also be an important criteria to take into account before starting downloading Climate data. 
 
-## Downloads data from the Climate Data Store
+## Downloading data from the Climate Data Store
 
 We are nearly there! And the best is to try it out.
 
-Let's search for the last available re-analysis. We can search for "ERA5" and it will return the list of available datasets:
+Let's search for the latest available re-analysis. We can search for "ERA5" and it will return the list of available datasets:
 
 <img src="../fig/CDS_ERA5_search.png" width="80%"/>
 
 > ## Single level versus pressure levels
 >
 > Let's stop here and discuss the results of our search:
-> - single levels are usually for variables available at (or close) to the surface.
-> - data on pressure levels give information on the vertical structure of the atmosphere.
+> - single levels are usually for variables available at (or close) to the surface;
+> - data on pressure levels provides information on the vertical structure of the atmosphere.
 >
 > For many practical applications, using single level (surface) data is sufficient.
 {: .callout}
@@ -137,9 +137,9 @@ You will then be re-directed to the list of your requests from where you can dow
 <br>
 
 If your retrieval is successful then click on the "download" button to download. 
-When there is any issue when retrieving data, you request will be "marked" as **failed**.
+When there is any issue with retrieving data, your request will be "marked" as **failed**.
 
-Please note that it is always good practice to select a small sample of data (in the present instance we take only one month) to check that it meets your needs!
+Please note that in the beginning it is always good practice to select a small sample of data (in the present instance we take only one month) to check that it meets your needs!
 
 Another issue here may be that apart from the variable and date, all the other boxes ticked involve notions that we do not understand yet!
 
@@ -148,7 +148,7 @@ However, for now let's concentrate on the dataset we downloaded to make our firs
 
 > ## What is total precipitation?
 > 
-> When we select total precipitation from [ERA5 monthly averaged data on single levels from 1979 to present](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=form), how can we have a description of the variable?
+> When we select **total precipitation** from [ERA5 monthly averaged data on single levels from 1979 to present](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=form), how can we have a description of the variable?
 > 
 > Each variable is described in the [Overview](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview).
 > 
@@ -162,9 +162,9 @@ However, for now let's concentrate on the dataset we downloaded to make our firs
 
 ## What data format for Climate data?
 
-Climate data can become large very quickly (as we usually need to analyze data over large period of time and covering large geographical areas) so we do not store them as text files (csv, tabular, etc.) to compress them as much as possible without loosing any important information.
+Climate data can become large very quickly (as we usually need to analyze data over large period of time and covering large geographical areas) so we do not store them as text files (i.e., your usual ASCII format, csv files, tabular, etc.) to compress them as much as possible without loosing any important information.
 
-All Climate data are stored in **binary** format and are not *human readable*.
+All Climate data are stored in **binary** format and hence are not *human readable*.
 
 Depending on the type of Climate data, you may have the choice between several data formats:
 
@@ -177,7 +177,7 @@ Depending on the type of Climate data, you may have the choice between several d
 > ### NetCDF
 >
 > [NetCDF](https://en.wikipedia.org/wiki/NetCDF)  ([Network Common Data Form](https://www.unidata.ucar.edu/software/netcdf/)) is a set of software libraries and self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data. NetCDF is commonly used to store and distribute scientific data. 
-> The NetCDF software was developed at the [Unidata Program Center](http://www.unidata.ucar.edu/publications/factsheets/current/factsheet_netcdf.pdf) in Boulder, Colorado, USA. 
+> The NetCDF software was developed at the [Unidata Program Center](http://www.unidata.ucar.edu/publications/factsheets/current/factsheet_netcdf.pdf) in Boulder, Colorado (USA). 
 > NetCDF files usually have the extension *.nc*. 
 > As for the GRIB format, NetCDF files are binary and you need to use specific tools to read them. NetCDF files can also be manipulated with most programming languages (R, Python, C, Fortran, etc.).
 > 
