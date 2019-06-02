@@ -2,6 +2,11 @@
 
 This repository makes use of [The Carpentries lesson template](https://github.com/carpentries/lesson-example) ([Copyright © Software
   Carpentry](http://software-carpentry.org/)).
+  
+   Jupyter+R: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NordicESMhub/climate-data-tutorial/gh-pages)
+   
+   RStudio: [![Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NordicESMhub/climate-data-tutorial/gh-pages?urlpath=rstudio)
+
 
 ## Contributing
 
