@@ -1,0 +1,41 @@
+name: esm-python-analysis
+
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  - python=3.7
+  - numpy >=1.14
+  - xarray >=0.10.8
+  - pandas >=0.22.0
+  - cartopy >=0.16.0
+  - matplotlib 
+  - seaborn >=0.8.1
+  - geopy >=1.17.0
+  - basemap
+  - netcdf4
+  - cis
+  - bokeh
+  - jupyter
+  - ipykernel
+  - notebook >=5.6.0
+  - scipy
+  - scikit-learn
+  - jupyterlab
+  - nc-time-axis
+  - plotly
+  - ipyleaflet
+  - rasterio
+  - requests
+  - pillow
+  - branca
+  - geopandas
+  - cdsapi 
+  - folium
+  - basemap-data-hires
+  - rasterstats
+  - eccodes
+  - pip:
+      - geojsoncontour
