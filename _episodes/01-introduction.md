@@ -24,12 +24,12 @@ keypoints:
 ---
 
 
-Many section of the lesson has been taken from the online [Copernicus Training material](https://uls.climate.copernicus.eu/).
+Many sections of the present lesson have been taken from the online [Copernicus Training material](https://uls.climate.copernicus.eu/).
 
 [Copernicus](https://www.copernicus.eu/en), previously known as GMES (Global Monitoring for Environment and Security), is the European Programme for the establishment of a European capacity for Earth Observation. 
 # What is climate?
 
-We all have an opinion about climate or climate change but do we all have the same understanding on what the word climate mean?
+Everybody has an opinion about climate or climate change ,but do we all have the same understanding on what the word climate means?
 
 > ## What does the word climate mean to you?
 > Go to [www.menti.com](https://www.menti.com/) and give us a list of words that you associate with climate. Use the code given by your instructor to enter the corresponding *menti* room.
@@ -44,8 +44,8 @@ Climate differs from weather, in that weather only describes the short-term cond
 
 > ## What do you think about wikipedia's definition of climate?
 >
-> Take a few minutes to talk in small group (2 to 3 people) about the definition of climate
-> given by wikipedia.
+> Take a few minutes to talk in small groups (2 to 3 people) about the definition of climate
+> as given by wikipedia.
 >
 {: .challenge}
 
@@ -58,11 +58,12 @@ Quantities that climate scientists are interested in are similar to those used t
 
 *Source: [Animated short on statistics](https://youtu.be/e0vj-0imOLw) from Norwegian infotainment program Siffer. Produced by TeddyTV for NRK. Animation by Ole Christoffer Haga*
 
-Watch this [Video](https://youtu.be/e0vj-0imOLw) to get a summary of the difference between climate and weather.
+Watch this [Video](https://youtu.be/e0vj-0imOLw) to get an illustration of the difference between climate and weather.
 
 Climate questions are different from weather questions:
-- By how much will global temperature at the end of the century be warmer than the beginning of the century?
-- What could happen if CO2 emissions double within the next century?
+- Will is rain tomowrow?      <- weather
+- By how much will global temperature at the end of the century be warmer than the beginning of the century?     <- climate
+- What could happen if CO2 emissions double within the next century?     <- climate
 
 # Climate variables
 
@@ -92,12 +93,12 @@ At the moment, there are [54 ECVs](https://gcos.wmo.int/en/essential-climate-var
 
 # Types of climate data resources
 
-When we talk about climate data, the type of data can vary significantly. We have very little observations at the scale of climate and usually not covering a large area. 
+When we talk about climate data, the type of data can vary significantly. We have very little actual observations at the scale of climate and usually not covering a large area. 
 
 The type of climate data you will be using greatly depends on the period of time you are interested in:
 
 - Observations
-- Re-analysis
+- Re-analyses
 - Climate models
 
 <img src="../fig/climate_data_types.png" width="60%"/>
@@ -111,17 +112,17 @@ Observations can be direct or indirect.
 
 These are measurements (from ground stations, buoys, satellites, etc.) of the occurrence of one or more physical variables (temperature, humidity, wind, etc.) at one or more particular times and places in and on the atmosphere, ocean, etc. 
 
-* direct when a physical parameter is measured directly, for example temperature or pressure at a land station. The sensors themselves can be either in-situ (hence providing information about their immediate environment) or remote (in which case they are able to measure over distances that extend significantly beyond the location of the instrument itself).
+Observations are described as **direct** when a physical parameter is measured directly, for example temperature or pressure at a land station. The sensors themselves can be either in-situ (hence providing information about their immediate environment) or remote (in which case they are able to measure over distances that extend significantly beyond the location of the instrument itself).
 
 <img src="../fig/WMO Global Observing System.png">
 *Source: [https://uls.climate.copernicus.eu](https://uls.climate.copernicus.eu)*
 
-Data coverage varies depending on the type of observations and quantities measured depend on the type of instruments.
+Data coverage varies, depending on the type of observations to me achieved, and the quantities measured depend on the type of instruments.
 
 <img src="../fig/ECMWF_synop-ship-metar_30052019.png" />
 *Source: [ECMWF SYNOP-SHIP-METAR data coverage](https://www.ecmwf.int/en/forecasts/charts/monitoring/dcover?facets=undefined&time=2019053000,0,2019053000&obs=synop-ship&Flag=all)*
 
-However, several satellites have been launched and are dedicated to the observation of the Earth System.
+In addition, several satellites have been launched and are dedicated to the observation of the Earth System.
 
 
 <img src="http://www.wmo.int/pages/prog/sat/images/cgms_satellites_1000.jpg" width="80%"/>
@@ -131,11 +132,11 @@ Satellites provide an increasing number of observations and allow to cover large
 <img src="../fig/ECMWF_AMSUA_30052019.png" />
 *Source: [ECMWF AMSUA data coverage](https://www.ecmwf.int/en/forecasts/charts/monitoring/dcover?facets=undefined&time=2019053000,0,2019053000&obs=AMSUA&Flag=all)*
 
-However, the satellite signal has to be translated to climate variables and is often perturbed by the atmosphere (clouds, etc.) thus introducing additional uncertainties and reducing the geographical coverage.
+However, the satellite signal has to be "translated" into climate variables and is often significantly perturbed by the atmosphere (clouds, etc.) thus introducing additional uncertainties and reducing the actual geographical coverage.
 
 ## Indirect observations
 
-* indirect when they are derived from other observations, for example information related to past climate (these are sometimes referred to as "climate proxies") can be inferred from tree rings (dendrochronology), lake sediments (varves) or ice cores.
+Observations are described as **indirect** when they are derived from other observations, for example information related to past climate (these are sometimes referred to as "climate proxies") can be inferred from tree rings (dendrochronology), lake sediments (varves) or ice cores.
 
 <img src="../fig/frost_rings_375.jpg">
 *Source: [https://www.earth.columbia.edu](https://www.earth.columbia.edu/news/2004/story06-03-04.html)* 
@@ -143,57 +144,65 @@ However, the satellite signal has to be translated to climate variables and is o
 Example taken from a Siberian pine tree in Mongolia where the distorted rings are evidence of a drastic cooling in the northern hemisphere (due to a massive volcanic eruption) that froze sap in the cells during the growing season in years 536-537 C.E. 
 
 
-There are also other types of observations that we do not mention in this lesson but climate scientists also use extensively numerical models.
+There are also other types of observations that we do not mention in this lesson which does not claim to include an exhaustive list of everything available, and we will now talt about other tools that climate scientists also use extensively: numerical models.
 
 
 # Models
 
-Climate models are a mathematical representation of the climate developed by scientists to understand and predict the climate system. 
-In order to be able to do this, the models divide the earth, ocean and atmosphere into a grid. The values of the predicted variables, such as surface pressure, wind, temperature, humidity and rainfall are calculated at each grid point over time, to predict their future values.
+Numerical models are a mathematical representation of the climate developed by scientists to understand and predict the climate system. 
+In order to be able to do this, the models divide the earth, ocean and atmosphere into one (or more) grid(s). The values of the predicted variables, such as surface pressure, wind, temperature, humidity and rainfall are calculated at each grid point over time, to predict their future values.
+
+
+> ## Note: 
+> Physical phenomena for which the governing equations are too complex or time consumming to solve numerically (typically
+> radiative transfer), or small scale processes that cannot be resolved (i.e., cloud microphysics) are simplified or **parameterized**.
+> However other processes, and in particular large-scale flows or circulations in the atmosphere and ocean, are **explicitly** resolved within the models.
+
+{: .callout}
 
 <img src="https://www.climate.gov/sites/default/files/AtmosphericModelSchematic.png" width="70%"/>
 *Source: [https://www.climate.gov/maps-data/primer/climate-models](https://www.climate.gov/maps-data/primer/climate-models)*
 
-## Re-analysis
+## Re-analyses
 
-A climate reanalysis gives a numerical description of the recent climate, produced by combining models with observations. It contains estimates of atmospheric parameters such as air temperature, pressure and wind at different altitudes, and surface parameters such as rainfall, soil moisture content, and sea-surface temperature. The estimates are produced for all locations on earth, and they span a long time period that can extend back by decades or more.
+A climate re-analysis gives a numerical description of the recent climate, produced by combining models with observations. It contains estimates of atmospheric parameters such as air temperature, pressure and wind at different altitudes, and surface parameters such as rainfall, soil moisture content, and sea-surface temperature. The estimates are produced for all locations on earth, and they span a long time period that can extend back decades or more.
 
 Typically, this is done in a stepwise fashion, where a model provides a weather/climate forecast, which is then corrected on the basis of the observations.
 
 <img src="../fig/reanalysis.png" width="50%"/>
 
-They have the advantage to provide "homogeneous" long time series of a large number of climate variables, evenly covering all geographical areas on the globe and also take into account different sources of observations.
+Re-analyses have the advantage to provide "homogeneous" long time series of a large number of climate variables, evenly covering all geographical areas on the globe, and they also take into account different sources of observations.
 
-### Global reanalysis
+### Global re-analysis
 
-There are [several global reanalysis datasets](https://reanalyses.org/). The quality of a reanalysis depends on the resolution of its model (including data assimilation method used) as well as the quality (and number) of observations assimilated.
+There are [several global re-analysis datasets](https://reanalyses.org/). The quality of a re-analysis depends on the resolution of its model (including data assimilation method used) as well as the quality (and number) of observations assimilated.
 
 > ## Note: 
-> Some people erroneously call reanalysis products “gridded observational data” as if by some magic trick observations not
+> Some people erroneously call re-analysis products “gridded observational data” as if by some magic trick observations not
 > made in the first place could be reinvented! Remember that there are values at each grid point and time only because a numerical
 > weather prediction model was used and that this model only used the available measurements.
 {: .callout}
 
-In addition to re-analysing all the old data using a consistent system, the reanalyses also make use of much archived data that was not available to the original analyses. This is because in a weather centre only data arrived before the model runs start can be used, also not all the huge volume of satellite data can be processed and used, for obvious operational constraints, however they could have been of great value to improve the forecasting. This allows for corrections to be made at a later stage as well as filling gaps in areas where data was sparse. 
+In addition to re-analysing all the old data using a consistent system, the re-analyses also make use of much archived data that was not available to the original analyses. This is because in a weather centre only data arrived before the model runs start can be used, also not all the huge volume of satellite data can be processed and used, for obvious operational constraints, however they could have been of great value to improve the forecasting. This allows for corrections to be made at a later stage as well as filling gaps in areas where data was sparse. 
 
 > ## ERA 5
-> In this lesson, we will focus on the new reanalysis product (called ERA5) that has recently been released by [ECMWF](http:/www.ecmwf.int) as part of [Copernicus Climate Change Services](https://climate.copernicus.eu/). This product has higher spatial resolution (31 km) and covers the period from 1979 to present (and this will soon be extended to 1950).
+> In this lesson, we will focus on the new re-analysis product (called ERA5) that has recently been released by [ECMWF](http:/www.ecmwf.int) as part of [Copernicus Climate Change Services](https://climate.copernicus.eu/). This product has higher spatial resolution (31 km) and covers the period from 1979 to present (and this will soon be extended back to 1950).
 >
 {: .callout}
 
 
-### Regional reanalysis
+### Regional re-analyses
  
-For some applications a higher resolution in space and time is needed. Therefore, regional reanalyses are produced.
+For some applications a higher resolution in space and time is needed. Therefore, regional re-analyses are also produced.
 
-Focusing on a smaller geographical region makes it possible to decrease the grid box size and time steps. There is also the opportunity to include additional observational data in the modelling process. The regional reanalysis uses boundary conditions from the global reanalysis in order to maintain the large scale dynamics of the system.
+Focusing on a smaller geographical region makes it possible to decrease the grid box size and time steps. There is also the opportunity to include additional observational data in the modelling process. The regional reanalysis uses boundary conditions from the global re-analysis in order to maintain the large scale dynamics of the system.
 
 <img src="../fig/regional_reanalysis.png" width="70%"/>
 
-> ## [Regional Reanalysis for Europe (RRA)](https://climate.copernicus.eu/regional-reanalysis-europe) 
+> ## [Regional Re-analysis for Europe (RRA)](https://climate.copernicus.eu/regional-reanalysis-europe) 
 > It is provided by [Swedish Meteorological and Hydrological Institute](http://www.smhi.se/en).
 > 
-> The Copernicus Regional Reanalysis for Europe service produces and delivers a regional reanalysis (RRA) including long-term datasets of Essential Climate Variables (ECVs). Some pre-operational datasets are available from 1961 to near real-time at a horizontal resolution of 11km and/or 5km and temporal resolution of 4 times a day. Before using these datasets, check the [user guide](http://datastore.copernicus-climate.eu/c3s/published-forms/c3sprod/reanalysis-uerra-europe-soil-levels/D322_Lot1.4.1.2_User_guides_v2.9.pdf) as there are a number of limitations.
+> The Copernicus Regional Reanalysis for Europe service produces and delivers a regional re-analysis (RRA) including long-term datasets of Essential Climate Variables (ECVs). Some pre-operational datasets are available from 1961 to near real-time at a horizontal resolution of 11km and/or 5km and temporal resolution of 4 times a day. Before using these datasets, check the [user guide](http://datastore.copernicus-climate.eu/c3s/published-forms/c3sprod/reanalysis-uerra-europe-soil-levels/D322_Lot1.4.1.2_User_guides_v2.9.pdf) as there are a number of limitations.
 {: .callout}
 
 
@@ -203,7 +212,7 @@ Focusing on a smaller geographical region makes it possible to decrease the grid
 
 Various types of models are used to analyse different aspects of the climate. 
 All have different ways to represent the real world, depending on how researchers prioritize and perform these simplifications (in terms of parameterizations, etc.) in the numerical climate model.
-They will all give different results but the collective results provide a better overview of the real world than any single model.
+They will all provide different outputs but the collective results give a better overview of the real world than any single model.
 
 
 There are many types of numerical climate models which differ by their complexity and coupling between various components (from more or less simplified atmosphere only models, to models where the atmosphere is coupled with land and/or ocean, and now full Earth system models including biogeochemistry, hydrology, land use, etc.). 
@@ -231,7 +240,7 @@ The models broadly fall into these categories:
 
 ### Resolution of climate models
 
-The capability of a climate model also depends on its resolution. We distinguish the **spatial resolution** and **temporal resolution** of a climate model. Very often a single model can be run with different resolutions and the choice is let to the scientist, depending on the scientific problem to tackle.
+The capability of a climate model also depends on its resolution. We distinguish the **spatial resolution** and **temporal resolution** of a climate model. Very often a single model can be run with different resolutions and the choice is left to the scientist, depending on the scientific problem to tackle.
 
 #### Spatial resolution
 
@@ -242,13 +251,13 @@ Spatial resolution specifies the size (in degrees of latitude and longitude or i
 
 #### Temporal resolution
 
-Temporal resolution specifies the time steps used in the climate model e.g. how often computations of the various quantities (temperature, wind speed and directions, etc.) are done. A typical time step for a climate model is 12 hours.
+Temporal resolution specifies the time steps used in the climate model e.g. how often computations of the various quantities (temperature, wind speed and directions, etc.) are done. A typical time step for a climate model is generally expressed in hours.
 
 Even though we can get climate data for every day, we don't really care on which day and which exact location we get a certain value. 
 
 ## Climate projections
 
-If the natural system is altered by assuming socio-economic trends, greenhouse gas emissions, or other activities by man, the climate models **project future climates**. These projections are scenarios of how man’s activities may affect the natural climate.
+If the natural system is altered by assuming socio-economic trends, greenhouse gas emissions, or other activities by mankind, the climate models **project future climates**. These projections are scenarios of how humman’s activities may affect the natural climate.
 
 
 ### Climate prediction vs. projection
@@ -288,7 +297,7 @@ their primary purpose is to provide time-dependent projections of atmospheric gr
 
 These scenarios are built around the concept of Representative Concentration Pathways (RCPs).
 
-The “Representative Concentration Pathways” were defined by the [Intergovernmental Panel on Climate Change (IPCC)](https://www.ipcc.ch/) for its 5th Assessment Report (AR5) in 2014 to provide plausible descriptions of the future, based on socio-economic scenarios of how global society grows and develops. These four RCPs (RCP2.6, RCP4.5, RCP6 and RCP8.5) are labelled after a possible range of radiative forcing values in the year 2100 corresponding to 2.6, 4.5, 6.0 and 8.5 W/m2, respectively.
+The “Representative Concentration Pathways” were defined by the IPCC for its 5th Assessment Report (AR5) in 2014 to provide plausible descriptions of the future, based on socio-economic scenarios of how global society grows and develops. These four RCPs (RCP2.6, RCP4.5, RCP6 and RCP8.5) are labelled after a possible range of radiative forcing values in the year 2100 corresponding to 2.6, 4.5, 6.0 and 8.5 W/m2, respectively.
 
 Each RCP corresponds to certain socio-economic assumptions:
 
@@ -339,7 +348,7 @@ RCPs ensure that starting conditions, historical data and projections are employ
 
 ### Shared Socioeconomic Pathways (SSP)
 
-Over the past few years, an international team of climate scientists, economists and energy systems modellers have built a range of new “pathways” that examine how global society, demographics and economics might change over the next century. They are collectively known as the “Shared Socioeconomic Pathways” (SSPs).
+Over the past few years, an international team of climate scientists, economists and energy systems modellers have built a range of new “pathways” that examine how global society, demographics and economics might change over the next century. They are collectively known as the “Shared Socio-economic Pathways” (SSPs).
 
 Information about the scenario process and the SSP framework can be found in [Moss et al. (2010)](http://www.nature.com/nature/journal/v463/n7282/full/nature08823.html), [van Vuuren et al. (2014)](http://link.springer.com/article/10.1007%2Fs10584-013-0906-1) and [O‘Neil et al. (2014)](http://link.springer.com/article/10.1007%2Fs10584-013-0905-2) and [Kriegler et al. (2014)](http://link.springer.com/article/10.1007%2Fs10584-013-0971-5). 
 
