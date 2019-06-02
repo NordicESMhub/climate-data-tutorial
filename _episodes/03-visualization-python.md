@@ -4,14 +4,11 @@ teaching: 0
 exercises: 0
 questions:
 - "Learn to visualize Climate data?"
-- "Which python packages use for my analysis?"
 objectives:
 - "Learn to combine Climate data with your own research topic"
 keypoints:
 - "xarray"
 - "cartopy"
-- "scipy"
-- "ipyleaflet"
 ---
 
 
@@ -568,11 +565,7 @@ for more information.
 > {: .solution}
 {: .challenge}
 
-# Interactive visualization
-
 # Retrieve Climate data with CDS API
-
-## Select area
 
 
 {% include links.md %}
