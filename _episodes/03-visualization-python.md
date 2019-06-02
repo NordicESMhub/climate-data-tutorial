@@ -4,7 +4,7 @@ teaching: 0
 exercises: 0
 questions:
 - "Learn to analyze and visualize Climate data?"
-- "Which python packages using for my analysis?"
+- "Which python packages use for my analysis?"
 objectives:
 - "Learn to combine Climate data with your own research topic"
 keypoints:
@@ -19,7 +19,7 @@ keypoints:
 
 In this section, we will learn to read the metadata and visualize the NetCDF file we just downloaded.
 
-Make sure you have either install Python along with the additional packages required to read Climate 
+Make sure you have installed Python along with the additional packages required to read Climate 
 data files as described in the [setup](../setup) instructions.
 
 The file we downloaded from CDS should be in your `Downloads` folder; to check it out, open a Terminal (Git bash terminal on windows) and type:
@@ -29,6 +29,7 @@ ls ~/Downloads/*.nc
 ~~~
 {: .language-bash}
 
+the `~` symbol (a.k.a. tilde) represents the home directory of a user;
 `*.nc` means that we are looking for any files with a suffix `.nc` (NetCDF file).
 
 ~~~
@@ -52,13 +53,13 @@ ERA5_REANALYSIS_precipitation_200306.nc
 ~~~
 {: .output}
 
-[Start Anaconda Navigator](https://docs.anaconda.com/anaconda/navigator/getting-started/#navigator-starting-navigator) and select **Environments**:
+[Start Anaconda Navigator](https://docs.anaconda.com/anaconda/navigator/getting-started/#navigator-starting-navigator), then select **Environments**:
 
 <img src="../fig/anaconda-navigator-environment.png" width="80%"/>
 
 
 
-Select **esm-python-analysis** environment and **Open with Jupyter Notebook**:
+Select the **esm-python-analysis** environment and either left-click on the triangle/arrow next to it and **Open with Jupyter Notebook**, or go back to the Home tab and click on Launch to open your **Jupyter Notebook** :
 
 <img src="../fig/python3_notebook.png" width="80%"/>
 
@@ -136,7 +137,7 @@ dset['tp'].plot(cmap='jet', vmax=0.02)
 
 <img src="../fig/tp_plot_jet.png" />
 
-We can see there is a band with *lot* of rain. Let's add continents and a projection using cartopy:
+We can see there is a *band* around the equator with a lot of rain. Let's add continents and a projection using cartopy:
 
 ~~~
 import matplotlib.pyplot as plt
@@ -166,8 +167,8 @@ We will discuss it in-depth in a follow-up episode.
 > From the same product type ([ERA5 single levels Monthly means](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=form))
 > select *2m temperature*. Make sure you rename your file to *ERA5_REANALYSIS_air_temperature_200306.nc*
 > 
-> - Inspect metadata of the new retrieved file
-> - Visualize *2m temperature* with Python
+> - Inspect the metadata of the new retrieved file
+> - Visualize the *2m temperature* with Python (using a similar script as for the total precipitation).
 >
 > > ## Solution with Python
 > > ~~~
@@ -324,7 +325,8 @@ Attributes:
 ~~~
 {: .output}
 
-The variable for precipitation is name **pr** so let's look at its metadata:
+This file contains monthly averaged data from January 1850 to December 2005. 
+In CMIP the variable name for precipitation flux is called **pr**, so let's look at the metadata:
 
 ~~~
 print(dset.pr)
@@ -370,7 +372,7 @@ dset.pr.attrs['units'] = 'm/day'
 ~~~
 {: .language-python}
 
-Then we can plot the precipitation field:
+Then we can select the data for June 2003 and plot the precipitation field:
 
 ~~~
 import matplotlib.pyplot as plt
@@ -391,14 +393,16 @@ plt.show()
 
 <img src="../fig/CMIP5_pr.png" width="80%" />
 
-To select June 2003, we used xarray select `sel`. It is very powerful as you can 
-specify the value you wish to select. You can also add a method such as `nearest` to select
-the closest point to a given value. You can select all values inside a range (inclusive) with `slice`:
+To select June 2003, we used xarray select `sel`. This is a very powerful tool with which you can 
+specify a particular value you wish to select. You can also add a method such as `nearest` to select
+the closest point to a given value. You can even select all the values inside a range (inclusive) with `slice`:
 
 ~~~
 dset['pr'].sel(time=slice('200306', '200406', 12))
 ~~~
 {: .language-python}
+
+This command first takes the month of June 2003, then *jumps* 12 months and takes the month of June 2004.
 
 ~~~
 <xarray.DataArray 'pr' (time: 2, lat: 96, lon: 144)>
@@ -439,11 +443,11 @@ for more information.
 > We selected one year (2003) and one month (June) from both ERA5 and CMIP5 but 
 > only data from re-analysis (ERA5) corresponds to the actual month of June 2003.
 > Data from the climate model (CMIP5 historical) is only "one realization" of a month of June,
-> typical of present day conditions but cannot be taken as the actual weather at that date.
-> To be more realistic, climate data has to be considered over much longer period of time. For instance,
+> typical of present day conditions, but it cannot be considered as the actual weather at that date.
+> To be more realistic, climate data has to be considered over a much longer period of time. For instance,
 > we could easily compute (for both ERA5 and CMIP5) the average of the month of June between 1988 and 2018 (spanning 30 years) to
 > have a more reliable results. However, as you have noticed, the horizontal resolution of ERA5 is much
-> higher in ERA5 data.
+> higher then the CMIP data and therefore there is much more variability/details in the re-analysis data (1/4 degrees) than with NorESM (about 2 degrees).
 >
 {: .callout}
 
