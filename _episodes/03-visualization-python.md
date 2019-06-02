@@ -567,6 +567,144 @@ for more information.
 
 # Retrieve Climate data with CDS API
 
+Using CDS web interface is very useful when you need to retrieve small amount of data and you do not need to customize 
+your request. However, it is often very useful to retrieve climate data directly on the computer where you
+need to run your postprocessing workflow.
+
+In that case, you can use the CDS API (Application Programming Interface) to retrieve Climate data directly in Python
+from the Climate Data Store.
+
+We will be using `cdsapi` python package.
+
+## Get your API key
+
+- Make sure you login to the [Climate Data Store](https://cds.climate.copernicus.eu/#!/home)
+
+- Click on your username (top right of the main page) to get your API key.
+
+<img src="../fig/CDS_API.png" width="80%" />
+
+- Copy the code displayed beside, in the file `$HOME/.cdsapirc`
+
+~~~
+url: https://cds.climate.copernicus.eu/api/v2
+key: UID:KEY
+~~~
+{: .language-bash}
+
+Where UID is your `uid` and  KEY your API key. See [documentation](https://cds.climate.copernicus.eu/api-how-to)
+to get your API and related information.
+
+## Use CDS API
+
+Once the CDS API client is installed, it can be used to request data from the datasets listed in the CDS catalogue. It is necessary to agree to the Terms of Use of every datasets that you intend to download.
+
+Attached to each dataset download form, the button **Show API Request** displays the python code to
+ be used. The request can be formatted using the interactive form. The api call must follow the syntax:
+
+~~~
+import cdsapi
+c = cdsapi.Client()
+
+c.retrieve("dataset-short-name", 
+           {... sub-selection request ...}, 
+           "target-file")
+~~~
+{: .language-python}
+
+For instance to retrieve the same ERA5 dataset e.g. near surface air temperature for June 2003:
+
+<img src="../fig/CDSAPI_t2m_ERA5.png" width="80%" />
+
+Let's try it:
+
+~~~
+import cdsapi
+
+c = cdsapi.Client()
+
+c.retrieve(
+    'reanalysis-era5-single-levels-monthly-means',
+    {
+        'product_type':'monthly_averaged_reanalysis',
+        'variable':'2m_temperature',
+        'year':'2003',
+        'month':'06',
+        'time':'00:00',
+        'format':'netcdf'
+    },
+    'download.nc')
+~~~
+
+## Geographical subset
+
+~~~
+import cdsapi
+
+c = cdsapi.Client()
+
+c.retrieve(
+    'reanalysis-era5-single-levels-monthly-means',
+    {      
+        'area'          : [60, -10, 50, 2], # North, West, South, East. Default: global
+        'product_type':'monthly_averaged_reanalysis',
+        'variable':'2m_temperature',
+        'year':'2003',
+        'month':'06',
+        'time':'00:00',
+        'format':'netcdf'
+    },
+    'download_small_area.nc')
+~~~
+{: .language-python}
+
+## Change horizontal resolution 
+
+For instance to get a coarser resolution:
+
+~~~
+import cdsapi
+
+c = cdsapi.Client()
+
+c.retrieve(
+    'reanalysis-era5-single-levels-monthly-means',
+    {      
+        'area'          : [60, -10, 50, 2], # North, West, South, East. Default: global
+        'grid'          : [1.0, 1.0], # Latitude/longitude grid: east-west (longitude) and north-south resolution (latitude). Default: 0.25 x 0.25
+        'product_type':'monthly_averaged_reanalysis',
+        'variable':'2m_temperature',
+        'year':'2003',
+        'month':'06',
+        'time':'00:00',
+        'format':'netcdf'
+    },
+    'download_small.nc')
+~~~
+{: .language-python}
+
+More information can be found [here](https://confluence.ecmwf.int/display/CKB/C3S+ERA5%3A+Web+API+to+CDS+API).
+       
+## To download CMIP 5 Climate data via CDS API
+
+~~~
+import cdsapi
+
+c = cdsapi.Client()
+
+c.retrieve(
+    'projections-cmip5-monthly-single-levels',
+    {
+        'variable':'2m_temperature',
+        'model':'noresm1_m',
+        'experiment':'historical',
+        'ensemble_member':'r1i1p1',
+        'period':'185001-200512'
+    },
+    'download_CMIP5.nc')
+~~~
+{: .language-python}
+
 
 {% include links.md %}
 
