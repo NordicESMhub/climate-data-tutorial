@@ -1,9 +1,9 @@
 ---
-title: "Analyze and Visualize Climate data with Python"
+title: "Visualize Climate data with Python"
 teaching: 0
 exercises: 0
 questions:
-- "Learn to analyze and visualize Climate data?"
+- "Learn to visualize Climate data?"
 - "Which python packages use for my analysis?"
 objectives:
 - "Learn to combine Climate data with your own research topic"
