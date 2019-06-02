@@ -185,7 +185,7 @@ plot(dset_r)
 <img src="../fig/tp_rplot_rotate.png" />
 
 > ## `rotate` function
-> Rotate a Raster* object that has x coordinates (longitude) from 0 to 360, to standard coordinates 
+> This function rotates a Raster* object that has x coordinates (longitude) from 0 to 360, to standard coordinates 
 > between -180 and 180 degrees. Longitude between 0 and 360 is frequently used in data from global 
 > climate models.
 > 
@@ -195,9 +195,9 @@ plot(dset_r)
 ## Plotting with ggplot2
 
 `ggplot2` is a plotting package that makes it simple to create complex plots from data in a data frame. 
-It provides a more programmatic interface for specifying what variables to plot, how they are displayed, 
-and general visual properties. Therefore, we only need minimal changes if the underlying data change or 
-if we decide to change from a bar plot to a scatter plot. This helps in creating publication quality 
+It provides a more programmatic interface for specifying what variables to plot, how they are to be displayed, 
+and to define general visual properties. Therefore, we only need minimal changes if the underlying data is modified or 
+if for example we decide to switch from a bar plot to a scatter plot. This helps in creating publication quality 
 plots with minimal amounts of adjustments and tweaking.
 
 To make use of this R package:
@@ -214,7 +214,7 @@ every observation. Well-structured data will save you lots of time when making f
 ggplot graphics are built step by step by adding new elements. Adding layers in this fashion allows for 
 extensive flexibility and customization of plots.
 
-To build a ggplot, we will use the following basic template that can be used for different types of plots:
+To build a ggplot, we will follow the following basic template that can be used for different types of plots:
 
 ~~~
 ggplot(data = <DATA>, mapping = aes(<MAPPINGS>)) +  <GEOM_FUNCTION>()
@@ -298,7 +298,7 @@ ggplot() +
 
 <img src="../fig/tp_rplot_jet.png" />
 
-We can see there is a band with *lot* of rain. Let's add continents and a projection using `borders`:
+We can see there is a band with *lots* of rain. Let's add continents and a projection using `borders`:
 
 ~~~
 ggplot() +
@@ -320,7 +320,7 @@ ggplot() +
 > - Inspect metadata of the new retrieved file
 > - Visualize *2m temperature* with R
 >
-> > ## Solution with Python
+> > ## Solution with R
 > > ~~~
 > > # Temperature
 > > dset <- raster('ERA5_REANALYSIS_air_temperature_200306.nc')
