@@ -367,7 +367,7 @@ a little more familiar with like mm day-1 or m day-1 (metre per day) that is wha
 To do this, consider that 1 kg of rain water spread over 1 m2 of surface is 1 mm in thickness and 
 that there are 86400 seconds in one day. Therefore, 1 kg m-2 s-1 = 86400 mm day-1 or 86.4 m day-1.
 
-So we can go ahead and multiply that array by 864.0 and update the units attribute accordingly:
+So we can go ahead and multiply that array by 86.4 and update the units attribute accordingly:
 
 ~~~
 dset.pr.data = dset.pr.data * 86.4
