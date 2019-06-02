@@ -357,23 +357,20 @@ ggplot() +
 It is very often convenient to visualize using a different projection than the original data:
 
 ~~~
-import matplotlib.pyplot as plt
-import cartopy.crs as ccrs
+# Reproject
 
-fig = plt.figure(figsize=[12,5])
+dset_r_ortho <- projectRaster(dset_r, crs='+proj=ortho +lat_0=40 +lon_0=20')
 
-# 111 means 1 row, 1 col and index 1
-ax = fig.add_subplot(111, projection = ccrs.Orthographic(central_longitude=20, central_latitude=40))
+df <- as.data.frame(dset_r_ortho, xy = TRUE) 
 
-dset['t2m'].plot(ax=ax,  cmap='jet',
-                   transform=ccrs.PlateCarree())
-ax.coastlines()
-
-plt.show()
+ggplot() +
+  geom_raster(data = df , aes(x = x, y = y, fill = X2.metre.temperature)) +
+  scale_fill_viridis_c()  +
+  coord_quickmap()
 ~~~
 {: .language-python}
 
-<img src="../fig/python-t2m-ortho.png" width="50%" />
+<img src="../fig/r-t2m-ortho.png" width="50%" />
 
 ## CMIP5 monthly data on single levels
 
