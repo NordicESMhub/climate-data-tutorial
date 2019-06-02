@@ -61,9 +61,9 @@ Quantities that climate scientists are interested in are similar to those used t
 Watch this [Video](https://youtu.be/e0vj-0imOLw) to get an illustration of the difference between climate and weather.
 
 Climate questions are different from weather questions:
-- Will is rain tomowrow?      <- weather
-- By how much will global temperature at the end of the century be warmer than the beginning of the century?     <- climate
-- What could happen if CO2 emissions double within the next century?     <- climate
+- Will it rain tomowrow?                  *<- weather*
+- By how much will global temperature at the end of the century be warmer than the beginning of the century?                 *<- climate*
+- What could happen if CO2 emissions double within the next century?                 *<- climate*
 
 # Climate variables
 
@@ -144,7 +144,7 @@ Observations are described as **indirect** when they are derived from other obse
 Example taken from a Siberian pine tree in Mongolia where the distorted rings are evidence of a drastic cooling in the northern hemisphere (due to a massive volcanic eruption) that froze sap in the cells during the growing season in years 536-537 C.E. 
 
 
-There are also other types of observations that we do not mention in this lesson which does not claim to include an exhaustive list of everything available, and we will now talt about other tools that climate scientists also use extensively: numerical models.
+There are also other types of observations that we do not mention in this lesson (which does not claim to include an exhaustive list of everything available), and we will now talk about other tools that climate scientists use extensively: numerical models.
 
 
 # Models
@@ -156,7 +156,7 @@ In order to be able to do this, the models divide the earth, ocean and atmospher
 > ## Note: 
 > Physical phenomena for which the governing equations are too complex or time consumming to solve numerically (typically
 > radiative transfer), or small scale processes that cannot be resolved (i.e., cloud microphysics) are simplified or **parameterized**.
-> However other processes, and in particular large-scale flows or circulations in the atmosphere and ocean, are **explicitly** resolved within the models.
+> However other processes, and in particular large-scale flows or circulations in the atmosphere and ocean, are generally *explicitly* resolved within the models.
 
 {: .callout}
 
@@ -260,7 +260,7 @@ Even though we can get climate data for every day, we don't really care on which
 If the natural system is altered by assuming socio-economic trends, greenhouse gas emissions, or other activities by mankind, the climate models **project future climates**. These projections are scenarios of how humman’s activities may affect the natural climate.
 
 
-### Climate prediction vs. projection
+### Climate prediction *vs.* projection
 
 A **climate prediction** (or climate forecast) is an attempt to produce an estimate of the actual evolution of the natural climate in the future, for example, at seasonal, inter-annual or long-term time scales. Since the future evolution of the climate system may be highly sensitive to initial conditions, such predictions are usually probabilistic in nature.
 **Climate projections** are distinct from climate predictions in that projections depend upon emission/concentration/radiative forcing **scenarios**, which are based on assumptions concerning, for example, future socio-economic and technological developments that may or may not be realized and are therefore subject to substantial uncertainty.
@@ -295,9 +295,9 @@ Many factors have to be taken into account when trying to predict how future glo
 A standard set of scenarios were defined by the IPCC and 
 their primary purpose is to provide time-dependent projections of atmospheric greenhouse gas (GHG) concentrations.
 
-These scenarios are built around the concept of Representative Concentration Pathways (RCPs).
+These scenarios are built around the concept of RCP.
 
-The “Representative Concentration Pathways” were defined by the IPCC for its 5th Assessment Report (AR5) in 2014 to provide plausible descriptions of the future, based on socio-economic scenarios of how global society grows and develops. These four RCPs (RCP2.6, RCP4.5, RCP6 and RCP8.5) are labelled after a possible range of radiative forcing values in the year 2100 corresponding to 2.6, 4.5, 6.0 and 8.5 W/m2, respectively.
+The “Representative Concentration Pathways” were defined by the IPCC for its 5th Assessment Report (AR5) in 2014 to provide plausible descriptions of the future, based on socio-economic scenarios of how global society grows and develops. These four RCPs (namely RCP2.6, RCP4.5, RCP6 and RCP8.5) are labelled after a possible range of radiative forcing values in the year 2100 corresponding to 2.6, 4.5, 6.0 and 8.5 W/m2, respectively.
 
 Each RCP corresponds to certain socio-economic assumptions:
 
