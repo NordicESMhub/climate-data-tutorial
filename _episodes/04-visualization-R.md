@@ -52,15 +52,15 @@ ERA5_REANALYSIS_precipitation_200306.nc
 
 [Start Anaconda Navigator](https://docs.anaconda.com/anaconda/navigator/getting-started/#navigator-starting-navigator) and select **Environments**:
 
-<img src="../fig/anaconda-navigator-r.png" width="80%"/>
+<img src="../fig/esm-r-analysis.png" width="80%"/>
 
 
 ## Quick visualization with R
 
       
-Select **esm-r-analysis** environment and **Open with Jupyter Notebook** or **Rstudio**:
+Select **esm-r-analysis** environment and **Rstudio**:
 
-<img src="../fig/R-notebook.png" width="80%" />
+<img src="../fig/esm-rstudio.png" width="80%" />
 
 
 
