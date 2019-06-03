@@ -355,6 +355,28 @@ ggplot() +
 {: .callout}
 
 
+## Change projection
+
+It is very often convenient to visualize using a different projection than the original data:
+
+~~~
+ggplot(df, aes(y=y, x=x, color=Total.precipitation)) +
+  geom_point(size=2, shape=15) +
+  borders('world', xlim=range(df$x), ylim=range(df$y), colour='black') +  
+  scale_color_distiller(palette='Spectral') +
+  coord_map('ortho', orientation = c(40, 20, 0))
+~~~
+{: .language-r}
+
+<img src="../fig/r-t2m-ortho.png" width="50%" />
+
+The projection is specified with [`coord_map`](https://ggplot2.tidyverse.org/reference/coord_map.html).
+
+Orientation takes 3 parameters:
+- latitude,longitude,rotation
+ 
+We also used `scale_color_distiller` to change the [palette](https://ggplot2.tidyverse.org/reference/scale_brewer.html).
+
 ## CMIP5 monthly data on single levels
 
 Let's have a look at CMIP 5 climate data. 
