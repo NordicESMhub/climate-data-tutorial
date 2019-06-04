@@ -62,7 +62,6 @@ import cdstoolbox as ct
 > For now, we make our selection via the web interface and then copy paste the request.	
 >	
 {: .callout}	
- Before running it, we need to add a bit more code:	
 
  
  {% include links.md %}
