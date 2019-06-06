@@ -88,6 +88,15 @@ When you search, you can make sure you only get datasets (and not documentation,
 
 As you can see, it is important to know what you are looking for before starting to download datasets. And the best approach is usually to narrow it down as much as possible to avoid having to download unecessary data. We will see in the next section that the size of the datasets can also be an important criteria to take into account before starting downloading Climate data. 
 
+> ## CMIP data avilable on the Copernicus Climate Data Store 
+>
+> Not all CMIP-5 and CMIP-6 data are made available through CDS. However,
+> you can access all CMIP data through [ESGF](https://esgf.llnl.gov/mission.html) nodes:
+> - [CMIP5](https://cmip.llnl.gov/cmip5/)
+> - [CMPI6](https://pcmdi.llnl.gov/CMIP6/)).
+>
+{: .challenge}
+
 ## Downloading data from the Climate Data Store
 
 We are nearly there! And the best is to try it out.
