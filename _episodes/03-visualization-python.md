@@ -138,7 +138,7 @@ dset['tp'].plot(cmap='jet', vmax=0.02)
 
 <img src="../fig/tp_plot_jet.png" />
 
-We can see there is a *band* around the equator with a lot of rain. Let's add continents and a projection using cartopy:
+We can see there is a *band* around the equator and areas especially in Asia and South America with a lot of rain. Let's add continents and a projection using cartopy:
 
 ~~~
 import matplotlib.pyplot as plt
