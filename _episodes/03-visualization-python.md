@@ -248,7 +248,7 @@ As you can see that you have the choice between several models, experiments and 
 > - understand some of the factors responsible for differences in model projections, including quantifying some key feedbacks such as those involving clouds and the carbon cycle. 
 >
 > 20 climate modeling groups from around the world participated to CMIP5.
-> All dataset are freely available from different repositories. For more information look [here](https://esgf-node.llnl.gov/projects/esgf-llnl/).
+> All the datasets are freely available from different repositories. For more information look [here](https://esgf-node.llnl.gov/projects/esgf-llnl/).
 {: .callout}
 
 We will choose NorESM1-M (Norwegian Earth System Model 1 - medium resolution) based on the [Norwegian Earth System Model](https://no.wikipedia.org/wiki/NorESM).
