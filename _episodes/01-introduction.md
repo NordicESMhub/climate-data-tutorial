@@ -117,7 +117,7 @@ Observations are described as **direct** when a physical parameter is measured d
 <img src="../fig/WMO Global Observing System.png">
 *Source: [https://uls.climate.copernicus.eu](https://uls.climate.copernicus.eu)*
 
-Data coverage varies, depending on the type of observations to me achieved, and the quantities measured depend on the type of instruments.
+Data coverage varies, depending on the type of observations to be achieved, and the quantities measured depend on the type of instruments.
 
 <img src="../fig/ECMWF_synop-ship-metar_30052019.png" />
 *Source: [ECMWF SYNOP-SHIP-METAR data coverage](https://www.ecmwf.int/en/forecasts/charts/monitoring/dcover?facets=undefined&time=2019053000,0,2019053000&obs=synop-ship&Flag=all)*
