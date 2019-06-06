@@ -27,9 +27,10 @@ keypoints:
 Many sections of the present lesson have been taken from the online [Copernicus Training material](https://uls.climate.copernicus.eu/).
 
 [Copernicus](https://www.copernicus.eu/en), previously known as GMES (Global Monitoring for Environment and Security), is the European Programme for the establishment of a European capacity for Earth Observation. 
+
 # What is climate?
 
-Everybody has an opinion about climate or climate change ,but do we all have the same understanding on what the word climate means?
+Everybody has an opinion about climate or climate change, but do we all have the same understanding on what the word climate means?
 
 > ## What does the word climate mean to you?
 > Go to [www.menti.com](https://www.menti.com/) and give us a list of words that you associate with climate. Use the code given by your instructor to enter the corresponding *menti* room.
