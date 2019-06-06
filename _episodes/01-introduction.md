@@ -158,7 +158,6 @@ In order to be able to do this, the models divide the earth, ocean and atmospher
 > Physical phenomena for which the governing equations are too complex or time consumming to solve numerically (typically
 > radiative transfer), or small scale processes that cannot be resolved (i.e., cloud microphysics) are simplified or **parameterized**.
 > However other processes, and in particular large-scale flows or circulations in the atmosphere and ocean, are generally *explicitly* resolved within the models.
-
 {: .callout}
 
 <img src="https://www.climate.gov/sites/default/files/AtmosphericModelSchematic.png" width="70%"/>
@@ -236,7 +235,7 @@ The models broadly fall into these categories:
 >
 > [Explore the Earth](https://expearth.uib.no/) to understand Climate systems!
 > 
-> {: .callout}
+{: .callout}
 
 
 ### Resolution of climate models
