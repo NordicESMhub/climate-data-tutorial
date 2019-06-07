@@ -813,6 +813,9 @@ Let's try it:
 ~~~
 library(ecmwfr)
 
+myUID <-  "...."
+
+wf_set_key(user=myUID, key='YYYYYYYYYYYYY', service='cds')
 # Specify the data set				
 request <- list(
     "dataset" = 'reanalysis-era5-single-levels-monthly-means',
@@ -828,7 +831,7 @@ request <- list(
 # will be returned as a variable (ncfile)
 # Set your UID properly and the path where to find .cdsapirc
 
-myUID <-  "...."
+
 ncfile <- wf_request(user = myUID,
                      request = request,   
                      transfer = TRUE,  
@@ -837,6 +840,9 @@ ncfile <- wf_request(user = myUID,
 ~~~
 {: .language-r}
 				
+In `wf_set_key` `user` is your Copernicus UID and  `key` your API key.
+
+
 ## Geographical subset
 
 ~~~
