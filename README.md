@@ -1,5 +1,7 @@
 # Climate data at hands
 
+**Funding**: [NeIC NICEST project](https://neic.no/nicest/) (2017-2019)
+
 This repository makes use of [The Carpentries lesson template](https://github.com/carpentries/lesson-example) ([Copyright © Software
   Carpentry](http://software-carpentry.org/)).
   
